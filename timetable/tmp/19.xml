@@ -1,0 +1,1496 @@
+<timetable importtype="database" options="idprefix:XML,groupstype1,decimalseparatordot" defaultexport="1">
+   <days options="canadd" columns="day,name,short">
+      <day name="Понеділок" short="Пон." day="0"/>
+      <day name="Вівторок" short=" Вівт." day="1"/>
+      <day name="Середа" short=" Сер." day="2"/>
+      <day name="Четвер" short=" Чет." day="3"/>
+      <day name="П'ятниця" short=" П'ят." day="4"/>
+   </days>
+   <periods options="canadd" columns="period,starttime,endtime">
+      <period period="1" starttime="8:30" endtime="9:15"/>
+      <period period="2" starttime="9:25" endtime="10:10"/>
+      <period period="3" starttime="10:30" endtime="11:15"/>
+      <period period="4" starttime="11:35" endtime="12:20"/>
+      <period period="5" starttime="12:30" endtime="13:15"/>
+      <period period="6" starttime="13:25" endtime="14:10"/>
+      <period period="7" starttime="14:20" endtime="15:05"/>
+      <period period="8" starttime="15:15" endtime="16:00"/>
+   </periods>
+   <teachers options="canadd" columns="id,name,short,gender,color">
+      <teacher id="*1" name="Труш Ольга Миколаївна" short="Труш О.М." gender="F" color="#CADCBA"/>
+      <teacher id="*2" name="Зеленський Олександр Станіславович" short="Зеленський О.С." gender="M" color="#BDC1FB"/>
+      <teacher id="*3" name="Лапко Юлія Миколаївна" short="Лапко Ю.М." gender="F" color="#E469D2"/>
+      <teacher id="*4" name="Карпенко Ганна Вікторівна" short="Карпенко Г.В." gender="F" color="#36DC98"/>
+      <teacher id="*5" name="Пилипенко Людмила Василівна" short="Пилипенко Л.В." gender="F" color="#9E2A7B"/>
+      <teacher id="*6" name="Титаренко Альона Сергіїївна" short="Титаренко А.С." gender="F" color="#EDDA31"/>
+      <teacher id="*7" name="Гнилуша Лілія Володимирівна" short="Гнилуша Л.В." gender="F" color="#D60F0A"/>
+      <teacher id="*8" name="Долиненко Вікторія Андріївна" short="Долиненко В.А." gender="F" color="#A12F5D"/>
+      <teacher id="*9" name="Плеса Інна Вікторівна" short="Плеса І.В." gender="F" color="#71923D"/>
+      <teacher id="*10" name="Лопата Олена Іванівна" short="Лопата О.І." gender="F" color="#D6D8AB"/>
+      <teacher id="*11" name="Мельник Валентина Михайлівна" short="Мельник В.М." gender="F" color="#47B1CD"/>
+      <teacher id="*12" name="Коса Тетяна Михайлівна" short="Коса Т.М." gender="F" color="#E70EAD"/>
+      <teacher id="*13" name="Дитюк Олена Іванівна" short="Дитюк О.І." gender="F" color="#8DE917"/>
+      <teacher id="*14" name="Пилипенко Ольга Павлівна" short="Пилипенко О.П." gender="F" color="#B097F5"/>
+      <teacher id="*15" name="Литвякова Наталія Вікторівна" short="Литвякова Н.В." gender="F" color="#4708EA"/>
+      <teacher id="*16" name="Лаврінчук Юлія Олександрівна" short="Лаврінчук Ю.О." gender="F" color="#83059B"/>
+      <teacher id="*17" name="Чава Сергій Анатолійович" short="Чава С.А." gender="M" color="#1DBE1A"/>
+      <teacher id="*18" name="Іванюк Ольга Миколаївна" short="Іванюк О.М." gender="F" color="#29CEC4"/>
+      <teacher id="*19" name="Герасименко Марія Петрівна" short="Герасименко М.П." gender="F" color="#3BABB8"/>
+      <teacher id="*20" name="Мартинова Юлія Сергіївна" short="Мартинова Ю.С." gender="F" color="#412FD5"/>
+      <teacher id="*21" name="Богдан Олена Іванівна" short="Богдан О.І." gender="F" color="#4BD9B2"/>
+      <teacher id="*22" name="Тарасенко Олена Миколаївна" short="Тарасенко О.М." gender="F" color="#C61C8A"/>
+      <teacher id="*23" name="Звєрєв Василь Юрійович" short="Звєрєв В.Ю." gender="M" color="#A3C15A"/>
+      <teacher id="*24" name="Дзюба Людмила Миколаївна" short="Дзюба Л.М." gender="F" color="#189404"/>
+      <teacher id="*25" name="Сало Алла Володимирівна" short="Сало А.В." gender="F" color="#99AE97"/>
+      <teacher id="*26" name="Бугай Віталій Григорович" short="Бугай В.Г." gender="M" color="#12B255"/>
+      <teacher id="*27" name="Давиденко Микола Григорович" short="Давиденко М.Г." gender="M" color="#FFFF00"/>
+      <teacher id="*28" name="Корнійчик Леонід Миколайович" short="Корнійчик Л.М." gender="M" color="#7C5CD5"/>
+      <teacher id="*29" name="Бойко Лідія Анатоліївна" short="Бойко Л.А." gender="F" color="#E9F8C9"/>
+      <teacher id="*30" name="Халімон Олександр Анаталійович" short="Халімон О.А." gender="M" color="#99CC3E"/>
+      <teacher id="*31" name="Чава Марія Омелянівна" short="Чава М.О." gender="F" color="#ABB9D6"/>
+      <teacher id="*32" name="Компанець Любов Григорівна" short="Компанець Л.Г." gender="F" color="#EA4A1E"/>
+      <teacher id="*33" name="Бушко Валентина Володимирівна" short="Бушко В.В." gender="F" color="#C86009"/>
+      <teacher id="*34" name="Собко Валентина Іванівна" short="Собко В.І." gender="F" color="#7DB399"/>
+      <teacher id="*35" name="Пильник Світлана Володимирівна" short="Пильник С.В." gender="F" color="#D1BDF0"/>
+      <teacher id="*36" name="Мурза Світлана Миколаївна" short="Мурза С.М." gender="F" color="#7AE436"/>
+      <teacher id="*37" name="Кашперська Людмила Василівна" short="Кашперська Л.В." gender="F" color="#4350ED"/>
+      <teacher id="*38" name="Ревко Алла Олександрівна" short="Ревко А.О." gender="F" color="#2A7DF7"/>
+      <teacher id="*39" name="Кузуб Галина Федорівна" short="Кузуб Г.Ф." gender="F" color="#2F1CC8"/>
+      <teacher id="*40" name="Сом Тетяна Миколаївна" short="Сом Т.М." gender="F" color="#36C868"/>
+      <teacher id="*41" name="Зеленська Галина Олексіївна" short="Зеленська Г.О." gender="F" color="#2B7DA6"/>
+      <teacher id="*42" name="Опанасенко Ніна Андріївна" short="Опанасенко Н.А." gender="F" color="#951B03"/>
+      <teacher id="*43" name="Пономарчук Валентина Михайлівна" short="Пономарчук В.М." gender="F" color="#FF0000"/>
+      <teacher id="*44" name="Дуденко Олена Юріївна" short="Дуденко О.Ю." gender="F" color="#00FF00"/>
+      <teacher id="*45" name="Міна Алла Миколаївна" short="Міна А.М." gender="F" color="#0000FF"/>
+      <teacher id="*46" name="Динник Таїсія Анатоліївна" short="Динник Т.А." gender="F" color="#FFCCFF"/>
+   </teachers>
+   <classes options="canadd" columns="id,name,short,classroomids,teacherid">
+      <class id="*1" name="1-А" short="1-А" teacherid="" classroomids=""/>
+      <class id="*2" name="1-Б" short="1-Б" teacherid="" classroomids=""/>
+      <class id="*3" name="1-В" short="1-В" teacherid="" classroomids=""/>
+      <class id="*4" name="2-А" short="2-А" teacherid="" classroomids=""/>
+      <class id="*5" name="2-Б" short="2-Б" teacherid="" classroomids=""/>
+      <class id="*6" name="2-В" short="2-В" teacherid="" classroomids=""/>
+      <class id="*7" name="3-А" short="3-А" teacherid="" classroomids=""/>
+      <class id="*8" name="3-Б" short="3-Б" teacherid="" classroomids=""/>
+      <class id="*9" name="4-А" short="4-А" teacherid="" classroomids=""/>
+      <class id="*10" name="4-Б" short="4-Б" teacherid="" classroomids=""/>
+      <class id="*11" name="5-А" short="5-А" teacherid="" classroomids=""/>
+      <class id="*12" name="5-Б" short="5-Б" teacherid="" classroomids=""/>
+      <class id="*13" name="5-В" short="5-В" teacherid="" classroomids=""/>
+      <class id="*14" name="6-А" short="6-А" teacherid="" classroomids=""/>
+      <class id="*15" name="6-Б" short="6-Б" teacherid="" classroomids=""/>
+      <class id="*16" name="6-В" short="6-В" teacherid="" classroomids=""/>
+      <class id="*17" name="7-А" short="7-А" teacherid="" classroomids=""/>
+      <class id="*18" name="7-Б" short="7-Б" teacherid="" classroomids=""/>
+      <class id="*19" name="8-А" short="8-А" teacherid="" classroomids=""/>
+      <class id="*20" name="8-Б" short="8-Б" teacherid="" classroomids=""/>
+      <class id="*21" name="9-А" short="9-А" teacherid="" classroomids=""/>
+      <class id="*22" name="9-Б" short="9-Б" teacherid="" classroomids=""/>
+      <class id="*23" name="10-А" short="10-А" teacherid="" classroomids=""/>
+      <class id="*24" name="10-Б" short="10-Б" teacherid="" classroomids=""/>
+      <class id="*25" name="11" short="11" teacherid="" classroomids=""/>
+      <class id="*26" name="З інд" short="З інд" teacherid="" classroomids=""/>
+      <class id="*27" name="К інд" short="К інд" teacherid="" classroomids=""/>
+      <class id="*28" name="Ш інд" short="Ш інд" teacherid="" classroomids=""/>
+      <class id="*29" name="Б інд" short="Б інд" teacherid="" classroomids=""/>
+      <class id="*30" name="С інд" short="С інд" teacherid="" classroomids=""/>
+   </classes>
+   <subjects options="canadd" columns="id,name,short">
+      <subject id="*1" name="Українська література" short="Укр. літ."/>
+      <subject id="*2" name="Українська мова. Читання" short="Читання"/>
+      <subject id="*3" name="Англійська мова" short="Англ. м."/>
+      <subject id="*4" name="Російська мова / Німецька мова" short="Рос.Нім.м."/>
+      <subject id="*5" name="Зарубіжна лiтература" short="Заруб. лiт."/>
+      <subject id="*6" name="Історія" short="Історія"/>
+      <subject id="*7" name="Громадянська освіта" short="Гр. осв."/>
+      <subject id="*8" name="Правознавство" short="Правозн."/>
+      <subject id="*9" name="Музичне мистецтво" short="Муз. мист."/>
+      <subject id="*10" name="Мистецтво" short="Мистецтво"/>
+      <subject id="*11" name="Образотворче мистецтво" short="Обр. м."/>
+      <subject id="*12" name="Математика" short="Математ."/>
+      <subject id="*13" name="Природознавство" short="Природозн."/>
+      <subject id="*14" name="Біологія" short="Біологія"/>
+      <subject id="*15" name="Географія" short="Географія"/>
+      <subject id="*16" name="Фiзика" short="Фiзика"/>
+      <subject id="*17" name="Астрономія" short="Астрон."/>
+      <subject id="*18" name="Хімія" short="Хімія"/>
+      <subject id="*19" name="Креслення" short="Креслення"/>
+      <subject id="*20" name="Технології" short="Технол."/>
+      <subject id="*21" name="Інформатика" short="Інформат."/>
+      <subject id="*22" name="Основи здоров’я" short="Осн. здор."/>
+      <subject id="*23" name="Фізкультура" short="Фізкульт."/>
+      <subject id="*24" name="Захист Вітчизни" short="Зах. Вітч."/>
+      <subject id="*25" name="Індивід." short="Індивід."/>
+      <subject id="*26" name="Українська мова " short="Укр. м."/>
+      <subject id="*27" name="Українська мова (поч.кл)" short="Укр. м."/>
+      <subject id="*28" name="Я досліджую світ " short="Я досл.св."/>
+      <subject id="*29" name="Я і Україна" short="Я і Укр."/>
+      <subject id="*30" name="Матем1-4" short="Математ."/>
+      <subject id="*31" name="Німецька мова (ф)" short="Нім.м.(ф)"/>
+      <subject id="*32" name="Історія України" short="Іст.Укр."/>
+      <subject id="*33" name="Всесвітня історія" short="Всесв.іст."/>
+      <subject id="*34" name="Алгебра" short="Алгебра"/>
+      <subject id="*35" name="Геометрія" short="Геометр."/>
+   </subjects>
+   <classrooms options="canadd" columns="id,name,short">
+      <classroom id="*1" name=" 1" short=" 1"/>
+      <classroom id="*2" name=" 2" short=" 2"/>
+      <classroom id="*3" name=" 3" short=" 3"/>
+      <classroom id="*4" name=" 4" short=" 4"/>
+      <classroom id="*5" name=" 5" short=" 5"/>
+      <classroom id="*6" name=" 6" short=" 6"/>
+      <classroom id="*7" name=" 9" short=" 9"/>
+      <classroom id="*8" name=" м" short=" м"/>
+      <classroom id="*9" name="12" short="12"/>
+      <classroom id="*10" name="13" short="13"/>
+      <classroom id="*11" name="14" short="14"/>
+      <classroom id="*12" name="15" short="15"/>
+      <classroom id="*13" name="16" short="16"/>
+      <classroom id="*14" name="17" short="17"/>
+      <classroom id="*15" name="18" short="18"/>
+      <classroom id="*16" name="19" short="19"/>
+      <classroom id="*17" name="20" short="20"/>
+      <classroom id="*18" name="21" short="21"/>
+      <classroom id="*19" name="22" short="22"/>
+      <classroom id="*20" name="27" short="27"/>
+      <classroom id="*21" name="30" short="30"/>
+      <classroom id="*22" name="31" short="31"/>
+      <classroom id="*23" name="32" short="32"/>
+      <classroom id="*24" name="33" short="33"/>
+      <classroom id="*25" name="35" short="35"/>
+      <classroom id="*26" name="36" short="36"/>
+      <classroom id="*27" name="39" short="39"/>
+      <classroom id="*28" name="42" short="42"/>
+      <classroom id="*29" name="43" short="43"/>
+      <classroom id="*30" name="д1" short="д1"/>
+      <classroom id="*31" name="д2" short="д2"/>
+      <classroom id="*32" name="д3" short="д3"/>
+      <classroom id="*33" name="д4" short="д4"/>
+      <classroom id="*34" name="д5" short="д5"/>
+      <classroom id="*35" name="к1а" short="к1а"/>
+      <classroom id="*36" name="к1б" short="к1б"/>
+      <classroom id="*37" name="к2а" short="к2а"/>
+      <classroom id="*38" name="к2б" short="к2б"/>
+      <classroom id="*39" name="к2в" short="к2в"/>
+      <classroom id="*40" name="сз1" short="сз1"/>
+      <classroom id="*41" name="сз2" short="сз2"/>
+      <classroom id="*42" name="сз3" short="сз3"/>
+   </classrooms>
+   <students options="canadd" columns="id,classid,name"/>
+   <groups options="canadd" columns="id,classid,name,entireclass,divisiontag,studentcount">
+      <group id="*1" name="Весь клас" classid="*1" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*2" name="1 група" classid="*1" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*3" name="2 група" classid="*1" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*4" name="Хлопці" classid="*1" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*5" name="Дівчата" classid="*1" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*6" name="Весь клас" classid="*2" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*7" name="1 група" classid="*2" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*8" name="2 група" classid="*2" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*9" name="Хлопці" classid="*2" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*10" name="Дівчата" classid="*2" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*11" name="Весь клас" classid="*3" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*12" name="1 група" classid="*3" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*13" name="2 група" classid="*3" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*14" name="Хлопці" classid="*3" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*15" name="Дівчата" classid="*3" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*16" name="Весь клас" classid="*4" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*17" name="1 група" classid="*4" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*18" name="2 група" classid="*4" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*19" name="Хлопці" classid="*4" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*20" name="Дівчата" classid="*4" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*21" name="Весь клас" classid="*5" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*22" name="1 група" classid="*5" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*23" name="2 група" classid="*5" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*24" name="Хлопці" classid="*5" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*25" name="Дівчата" classid="*5" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*26" name="Весь клас" classid="*6" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*27" name="1 група" classid="*6" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*28" name="2 група" classid="*6" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*29" name="Хлопці" classid="*6" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*30" name="Дівчата" classid="*6" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*31" name="Весь клас" classid="*7" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*32" name="1 група" classid="*7" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*33" name="2 група" classid="*7" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*34" name="Хлопці" classid="*7" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*35" name="Дівчата" classid="*7" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*36" name="Весь клас" classid="*8" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*37" name="1 група" classid="*8" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*38" name="2 група" classid="*8" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*39" name="Хлопці" classid="*8" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*40" name="Дівчата" classid="*8" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*41" name="Весь клас" classid="*9" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*42" name="1 група" classid="*9" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*43" name="2 група" classid="*9" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*44" name="Хлопці" classid="*9" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*45" name="Дівчата" classid="*9" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*46" name="Весь клас" classid="*10" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*47" name="1 група" classid="*10" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*48" name="2 група" classid="*10" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*49" name="Хлопці" classid="*10" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*50" name="Дівчата" classid="*10" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*51" name="Весь клас" classid="*11" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*52" name="1 група" classid="*11" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*53" name="2 група" classid="*11" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*54" name="Хлопці" classid="*11" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*55" name="Дівчата" classid="*11" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*56" name="Весь клас" classid="*12" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*57" name="1 група" classid="*12" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*58" name="2 група" classid="*12" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*59" name="Хлопці" classid="*12" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*60" name="Дівчата" classid="*12" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*61" name="Весь клас" classid="*13" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*62" name="1 група" classid="*13" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*63" name="2 група" classid="*13" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*64" name="Хлопці" classid="*13" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*65" name="Дівчата" classid="*13" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*66" name="Весь клас" classid="*14" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*67" name="1 група" classid="*14" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*68" name="2 група" classid="*14" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*69" name="Хлопці" classid="*14" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*70" name="Дівчата" classid="*14" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*71" name="Весь клас" classid="*15" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*72" name="1 група" classid="*15" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*73" name="2 група" classid="*15" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*74" name="Хлопці" classid="*15" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*75" name="Дівчата" classid="*15" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*76" name="Весь клас" classid="*16" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*77" name="1 група" classid="*16" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*78" name="2 група" classid="*16" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*79" name="Хлопці" classid="*16" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*80" name="Дівчата" classid="*16" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*81" name="Весь клас" classid="*17" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*82" name="1 група" classid="*17" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*83" name="2 група" classid="*17" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*84" name="Хлопці" classid="*17" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*85" name="Дівчата" classid="*17" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*86" name="Весь клас" classid="*18" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*87" name="1 група" classid="*18" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*88" name="2 група" classid="*18" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*89" name="Хлопці" classid="*18" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*90" name="Дівчата" classid="*18" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*91" name="Весь клас" classid="*19" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*92" name="1 група" classid="*19" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*93" name="2 група" classid="*19" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*94" name="Хлопці" classid="*19" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*95" name="Дівчата" classid="*19" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*96" name="Весь клас" classid="*20" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*97" name="1 група" classid="*20" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*98" name="2 група" classid="*20" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*99" name="Хлопці" classid="*20" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*100" name="Дівчата" classid="*20" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*101" name="Весь клас" classid="*21" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*102" name="1 група" classid="*21" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*103" name="2 група" classid="*21" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*104" name="Хлопці" classid="*21" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*105" name="Дівчата" classid="*21" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*106" name="Весь клас" classid="*22" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*107" name="1 група" classid="*22" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*108" name="2 група" classid="*22" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*109" name="Хлопці" classid="*22" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*110" name="Дівчата" classid="*22" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*111" name="Весь клас" classid="*23" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*112" name="1 група" classid="*23" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*113" name="2 група" classid="*23" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*114" name="Хлопці" classid="*23" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*115" name="Дівчата" classid="*23" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*116" name="Весь клас" classid="*24" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*117" name="1 група" classid="*24" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*118" name="2 група" classid="*24" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*119" name="Хлопці" classid="*24" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*120" name="Дівчата" classid="*24" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*121" name="Весь клас" classid="*25" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*122" name="1 група" classid="*25" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*123" name="2 група" classid="*25" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*124" name="Хлопці" classid="*25" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*125" name="Дівчата" classid="*25" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*126" name="Весь клас" classid="*26" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*127" name="1 група" classid="*26" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*128" name="2 група" classid="*26" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*129" name="Хлопці" classid="*26" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*130" name="Дівчата" classid="*26" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*131" name="Весь клас" classid="*27" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*132" name="1 група" classid="*27" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*133" name="2 група" classid="*27" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*134" name="Хлопці" classid="*27" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*135" name="Дівчата" classid="*27" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*136" name="Весь клас" classid="*28" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*137" name="1 група" classid="*28" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*138" name="2 група" classid="*28" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*139" name="Хлопці" classid="*28" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*140" name="Дівчата" classid="*28" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*141" name="Весь клас" classid="*29" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*142" name="1 група" classid="*29" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*143" name="2 група" classid="*29" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*144" name="Хлопці" classid="*29" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*145" name="Дівчата" classid="*29" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*146" name="Весь клас" classid="*30" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="*147" name="1 група" classid="*30" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*148" name="2 група" classid="*30" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="*149" name="Хлопці" classid="*30" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="*150" name="Дівчата" classid="*30" entireclass="0" divisiontag="2" studentcount=""/>
+   </groups>
+   <lessons options="canadd" columns="id,subjectid,classids,groupids,studentids,teacherids,classroomids,periodspercard,periodsperweek,weeks">
+      <lesson id="*1" classids="*25" subjectid="*26" periodspercard="1" periodsperweek="2.0" teacherids="*5" classroomids="*15" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*2" classids="*25" subjectid="*1" periodspercard="1" periodsperweek="2.0" teacherids="*5" classroomids="*15" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*3" classids="*25" subjectid="*3" periodspercard="1" periodsperweek="3.0" teacherids="*11" classroomids="*9" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*4" classids="*25" subjectid="*18" periodspercard="1" periodsperweek="2.0" teacherids="*22" classroomids="*26" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*5" classids="*25" subjectid="*14" periodspercard="1" periodsperweek="2.0" teacherids="*21" classroomids="*20" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*6" classids="*25" subjectid="*16" periodspercard="1" periodsperweek="3.0" teacherids="*2" classroomids="*25" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*7" classids="*25" subjectid="*17" periodspercard="1" periodsperweek="1.0" teacherids="*2" classroomids="*25" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*8" classids="*25" subjectid="*5" periodspercard="1" periodsperweek="1.0" teacherids="*9" classroomids="*6" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*9" classids="*25" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*26" classroomids="*41" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*10" classids="*23" subjectid="*26" periodspercard="1" periodsperweek="2.0" teacherids="*5" classroomids="*15" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*11" classids="*23" subjectid="*1" periodspercard="1" periodsperweek="2.0" teacherids="*5" classroomids="*15" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*12" classids="*23" subjectid="*7" periodspercard="1" periodsperweek="2.0" teacherids="*17" classroomids="*27" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*13" classids="*23" subjectid="*18" periodspercard="1" periodsperweek="1.0" teacherids="*22" classroomids="*26" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*14" classids="*23" subjectid="*18" periodspercard="1" periodsperweek="0.5" teacherids="*22" classroomids="*26" groupids="*111" studentids="" weeks="10"/>
+      <lesson id="*15" classids="*23" subjectid="*16" periodspercard="1" periodsperweek="3.0" teacherids="*2" classroomids="*25" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*16" classids="*24" subjectid="*1" periodspercard="1" periodsperweek="2.0" teacherids="*5" classroomids="*15" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*17" classids="*24" subjectid="*26" periodspercard="1" periodsperweek="2.0" teacherids="*5" classroomids="*15" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*18" classids="*24" subjectid="*7" periodspercard="1" periodsperweek="2.0" teacherids="*19" classroomids="*14" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*19" classids="*24" subjectid="*18" periodspercard="1" periodsperweek="1.0" teacherids="*22" classroomids="*26" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*20" classids="*24" subjectid="*14" periodspercard="1" periodsperweek="2.0" teacherids="*22" classroomids="*20" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*21" classids="*24" subjectid="*16" periodspercard="1" periodsperweek="3.0" teacherids="*2" classroomids="*25" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*22" classids="*24" subjectid="*15" periodspercard="1" periodsperweek="1.0" teacherids="*18" classroomids="*29" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*23" classids="*24" subjectid="*15" periodspercard="1" periodsperweek="0.5" teacherids="*18" classroomids="*29" groupids="*116" studentids="" weeks="01"/>
+      <lesson id="*24" classids="*2" subjectid="*3" periodspercard="1" periodsperweek="2.0" teacherids="*13" classroomids="*35" groupids="*6" studentids="" weeks="1"/>
+      <lesson id="*25" classids="*2" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*35" groupids="*6" studentids="" weeks="1"/>
+      <lesson id="*26" classids="*2" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*24" classroomids="*35" groupids="*6" studentids="" weeks="1"/>
+      <lesson id="*27" classids="*2" subjectid="*27" periodspercard="1" periodsperweek="7.0" teacherids="*37" classroomids="*35" groupids="*6" studentids="" weeks="1"/>
+      <lesson id="*28" classids="*2" subjectid="*28" periodspercard="1" periodsperweek="3.0" teacherids="*37" classroomids="*35" groupids="*6" studentids="" weeks="1"/>
+      <lesson id="*29" classids="*2" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*37" classroomids="*35" groupids="*6" studentids="" weeks="1"/>
+      <lesson id="*30" classids="*1" subjectid="*3" periodspercard="1" periodsperweek="2.0" teacherids="*13" classroomids="*36" groupids="*1" studentids="" weeks="1"/>
+      <lesson id="*31" classids="*1" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*24" classroomids="*36" groupids="*1" studentids="" weeks="1"/>
+      <lesson id="*32" classids="*1" subjectid="*27" periodspercard="1" periodsperweek="7.0" teacherids="*36" classroomids="*36" groupids="*1" studentids="" weeks="1"/>
+      <lesson id="*33" classids="*1" subjectid="*28" periodspercard="1" periodsperweek="3.0" teacherids="*36" classroomids="*36" groupids="*1" studentids="" weeks="1"/>
+      <lesson id="*34" classids="*1" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*36" classroomids="*36" groupids="*1" studentids="" weeks="1"/>
+      <lesson id="*35" classids="*3" subjectid="*3" periodspercard="1" periodsperweek="2.0" teacherids="*13" classroomids="*3" groupids="*11" studentids="" weeks="1"/>
+      <lesson id="*36" classids="*3" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*3" groupids="*11" studentids="" weeks="1"/>
+      <lesson id="*37" classids="*3" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*24" classroomids="*3" groupids="*11" studentids="" weeks="1"/>
+      <lesson id="*38" classids="*3" subjectid="*27" periodspercard="1" periodsperweek="7.0" teacherids="*38" classroomids="*3" groupids="*11" studentids="" weeks="1"/>
+      <lesson id="*39" classids="*3" subjectid="*28" periodspercard="1" periodsperweek="3.0" teacherids="*38" classroomids="*3" groupids="*11" studentids="" weeks="1"/>
+      <lesson id="*40" classids="*3" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*38" classroomids="*3" groupids="*11" studentids="" weeks="1"/>
+      <lesson id="*41" classids="*4" subjectid="*3" periodspercard="1" periodsperweek="3.0" teacherids="*6" classroomids="*37" groupids="*16" studentids="" weeks="1"/>
+      <lesson id="*42" classids="*4" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*37" groupids="*16" studentids="" weeks="1"/>
+      <lesson id="*43" classids="*4" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*24" classroomids="*37" groupids="*16" studentids="" weeks="1"/>
+      <lesson id="*44" classids="*4" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*39" classroomids="*37" groupids="*16" studentids="" weeks="1"/>
+      <lesson id="*45" classids="*4" subjectid="*28" periodspercard="1" periodsperweek="3.0" teacherids="*39" classroomids="*37" groupids="*16" studentids="" weeks="1"/>
+      <lesson id="*46" classids="*5" subjectid="*3" periodspercard="1" periodsperweek="3.0" teacherids="*6" classroomids="*38" groupids="*21" studentids="" weeks="1"/>
+      <lesson id="*47" classids="*5" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*38" groupids="*21" studentids="" weeks="1"/>
+      <lesson id="*48" classids="*5" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*24" classroomids="*38" groupids="*21" studentids="" weeks="1"/>
+      <lesson id="*49" classids="*5" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*40" classroomids="*38" groupids="*21" studentids="" weeks="1"/>
+      <lesson id="*50" classids="*5" subjectid="*28" periodspercard="1" periodsperweek="3.0" teacherids="*40" classroomids="*38" groupids="*21" studentids="" weeks="1"/>
+      <lesson id="*51" classids="*6" subjectid="*3" periodspercard="1" periodsperweek="3.0" teacherids="*6" classroomids="*39" groupids="*26" studentids="" weeks="1"/>
+      <lesson id="*52" classids="*6" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*39" groupids="*26" studentids="" weeks="1"/>
+      <lesson id="*53" classids="*6" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*41" classroomids="*39" groupids="*26" studentids="" weeks="1"/>
+      <lesson id="*54" classids="*6" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*41" classroomids="*39" groupids="*26" studentids="" weeks="1"/>
+      <lesson id="*55" classids="*6" subjectid="*28" periodspercard="1" periodsperweek="3.0" teacherids="*41" classroomids="*39" groupids="*26" studentids="" weeks="1"/>
+      <lesson id="*56" classids="*7" subjectid="*3" periodspercard="1" periodsperweek="2.0" teacherids="*11" classroomids="*9" groupids="*31" studentids="" weeks="1"/>
+      <lesson id="*57" classids="*7" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*5" groupids="*31" studentids="" weeks="1"/>
+      <lesson id="*58" classids="*7" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*32" classroomids="*5" groupids="*31" studentids="" weeks="1"/>
+      <lesson id="*59" classids="*7" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*32" classroomids="*5" groupids="*31" studentids="" weeks="1"/>
+      <lesson id="*60" classids="*7" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*32" classroomids="*5" groupids="*31" studentids="" weeks="1"/>
+      <lesson id="*61" classids="*7" subjectid="*29" periodspercard="1" periodsperweek="1.0" teacherids="*32" classroomids="*5" groupids="*31" studentids="" weeks="1"/>
+      <lesson id="*62" classids="*7" subjectid="*13" periodspercard="1" periodsperweek="2.0" teacherids="*32" classroomids="*5" groupids="*31" studentids="" weeks="1"/>
+      <lesson id="*63" classids="*8" subjectid="*3" periodspercard="1" periodsperweek="2.0" teacherids="*11" classroomids="*9" groupids="*36" studentids="" weeks="1"/>
+      <lesson id="*64" classids="*8" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*7" groupids="*36" studentids="" weeks="1"/>
+      <lesson id="*65" classids="*8" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*33" classroomids="*7" groupids="*36" studentids="" weeks="1"/>
+      <lesson id="*66" classids="*8" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*33" classroomids="*7" groupids="*36" studentids="" weeks="1"/>
+      <lesson id="*67" classids="*8" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*33" classroomids="*7" groupids="*36" studentids="" weeks="1"/>
+      <lesson id="*68" classids="*8" subjectid="*29" periodspercard="1" periodsperweek="1.0" teacherids="*33" classroomids="*7" groupids="*36" studentids="" weeks="1"/>
+      <lesson id="*69" classids="*8" subjectid="*13" periodspercard="1" periodsperweek="2.0" teacherids="*33" classroomids="*7" groupids="*36" studentids="" weeks="1"/>
+      <lesson id="*70" classids="*9" subjectid="*3" periodspercard="1" periodsperweek="2.0" teacherids="*12" classroomids="*2" groupids="*41" studentids="" weeks="1"/>
+      <lesson id="*71" classids="*9" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*2" groupids="*41" studentids="" weeks="1"/>
+      <lesson id="*72" classids="*9" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*34" classroomids="*2" groupids="*41" studentids="" weeks="1"/>
+      <lesson id="*73" classids="*9" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*34" classroomids="*2" groupids="*41" studentids="" weeks="1"/>
+      <lesson id="*74" classids="*9" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*34" classroomids="*2" groupids="*41" studentids="" weeks="1"/>
+      <lesson id="*75" classids="*9" subjectid="*29" periodspercard="1" periodsperweek="1.0" teacherids="*34" classroomids="*2" groupids="*41" studentids="" weeks="1"/>
+      <lesson id="*76" classids="*9" subjectid="*13" periodspercard="1" periodsperweek="2.0" teacherids="*34" classroomids="*2" groupids="*41" studentids="" weeks="1"/>
+      <lesson id="*77" classids="*10" subjectid="*3" periodspercard="1" periodsperweek="2.0" teacherids="*12" classroomids="*1" groupids="*46" studentids="" weeks="1"/>
+      <lesson id="*78" classids="*10" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*1" groupids="*46" studentids="" weeks="1"/>
+      <lesson id="*79" classids="*10" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*35" classroomids="*1" groupids="*46" studentids="" weeks="1"/>
+      <lesson id="*80" classids="*10" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*35" classroomids="*1" groupids="*46" studentids="" weeks="1"/>
+      <lesson id="*81" classids="*10" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*35" classroomids="*1" groupids="*46" studentids="" weeks="1"/>
+      <lesson id="*82" classids="*10" subjectid="*29" periodspercard="1" periodsperweek="1.0" teacherids="*35" classroomids="*1" groupids="*46" studentids="" weeks="1"/>
+      <lesson id="*83" classids="*10" subjectid="*13" periodspercard="1" periodsperweek="2.0" teacherids="*35" classroomids="*1" groupids="*46" studentids="" weeks="1"/>
+      <lesson id="*84" classids="*11" subjectid="*26" periodspercard="1" periodsperweek="3.0" teacherids="*6" classroomids="*12" groupids="*51" studentids="" weeks="1"/>
+      <lesson id="*85" classids="*11" subjectid="*12" periodspercard="1" periodsperweek="4.0" teacherids="*8" classroomids="*24" groupids="*51" studentids="" weeks="1"/>
+      <lesson id="*86" classids="*11" subjectid="*5" periodspercard="1" periodsperweek="2.0" teacherids="*9" classroomids="*6" groupids="*51" studentids="" weeks="1"/>
+      <lesson id="*87" classids="*11" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*27" classroomids="*40" groupids="*51" studentids="" weeks="1"/>
+      <lesson id="*88" classids="*11" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*21" groupids="*51" studentids="" weeks="1"/>
+      <lesson id="*89" classids="*11" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*29" classroomids="*4" groupids="*51" studentids="" weeks="1"/>
+      <lesson id="*90" classids="*12" subjectid="*1" periodspercard="1" periodsperweek="2.0" teacherids="*5" classroomids="*15" groupids="*56" studentids="" weeks="1"/>
+      <lesson id="*91" classids="*12" subjectid="*26" periodspercard="1" periodsperweek="3.0" teacherids="*5" classroomids="*15" groupids="*56" studentids="" weeks="1"/>
+      <lesson id="*92" classids="*12" subjectid="*26" periodspercard="1" periodsperweek="0.5" teacherids="*5" classroomids="*15" groupids="*56" studentids="" weeks="10"/>
+      <lesson id="*93" classids="*12" subjectid="*12" periodspercard="1" periodsperweek="4.0" teacherids="*14" classroomids="*21" groupids="*56" studentids="" weeks="1"/>
+      <lesson id="*94" classids="*12" subjectid="*5" periodspercard="1" periodsperweek="2.0" teacherids="*9" classroomids="*6" groupids="*56" studentids="" weeks="1"/>
+      <lesson id="*95" classids="*12" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*27" classroomids="*40" groupids="*56" studentids="" weeks="1"/>
+      <lesson id="*96" classids="*12" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*21" groupids="*56" studentids="" weeks="1"/>
+      <lesson id="*97" classids="*12" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*29" classroomids="*4" groupids="*56" studentids="" weeks="1"/>
+      <lesson id="*98" classids="*12" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*25" classroomids="*18" groupids="*56" studentids="" weeks="1"/>
+      <lesson id="*99" classids="*13" subjectid="*1" periodspercard="1" periodsperweek="2.0" teacherids="*4" classroomids="*10" groupids="*61" studentids="" weeks="1"/>
+      <lesson id="*100" classids="*13" subjectid="*26" periodspercard="1" periodsperweek="3.0" teacherids="*4" classroomids="*10" groupids="*61" studentids="" weeks="1"/>
+      <lesson id="*101" classids="*13" subjectid="*26" periodspercard="1" periodsperweek="0.5" teacherids="*4" classroomids="*10" groupids="*61" studentids="" weeks="01"/>
+      <lesson id="*102" classids="*13" subjectid="*3" periodspercard="1" periodsperweek="3.0" teacherids="*11" classroomids="*9" groupids="*61" studentids="" weeks="1"/>
+      <lesson id="*103" classids="*13" subjectid="*5" periodspercard="1" periodsperweek="2.0" teacherids="*9" classroomids="*6" groupids="*61" studentids="" weeks="1"/>
+      <lesson id="*104" classids="*13" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*21" groupids="*61" studentids="" weeks="1"/>
+      <lesson id="*105" classids="*13" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*29" classroomids="*4" groupids="*61" studentids="" weeks="1"/>
+      <lesson id="*106" classids="*13" subjectid="*12" periodspercard="1" periodsperweek="4.0" teacherids="*8" classroomids="*24" groupids="*61" studentids="" weeks="1"/>
+      <lesson id="*107" classids="*13" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*27" classroomids="*40" groupids="*61" studentids="" weeks="1"/>
+      <lesson id="*108" classids="*13" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*25" classroomids="*18" groupids="*61" studentids="" weeks="1"/>
+      <lesson id="*109" classids="*14" subjectid="*1" periodspercard="1" periodsperweek="2.0" teacherids="*5" classroomids="*15" groupids="*66" studentids="" weeks="1"/>
+      <lesson id="*110" classids="*14" subjectid="*26" periodspercard="1" periodsperweek="3.0" teacherids="*6" classroomids="*12" groupids="*66" studentids="" weeks="1"/>
+      <lesson id="*111" classids="*14" subjectid="*26" periodspercard="1" periodsperweek="0.5" teacherids="*6" classroomids="*12" groupids="*66" studentids="" weeks="10"/>
+      <lesson id="*112" classids="*14" subjectid="*3" periodspercard="1" periodsperweek="3.0" teacherids="*11" classroomids="*9" groupids="*66" studentids="" weeks="1"/>
+      <lesson id="*113" classids="*14" subjectid="*6" periodspercard="1" periodsperweek="2.0" teacherids="*20" classroomids="*4" groupids="*66" studentids="" weeks="1"/>
+      <lesson id="*114" classids="*14" subjectid="*14" periodspercard="1" periodsperweek="2.0" teacherids="*21" classroomids="*20" groupids="*66" studentids="" weeks="1"/>
+      <lesson id="*115" classids="*14" subjectid="*5" periodspercard="1" periodsperweek="2.0" teacherids="*9" classroomids="*6" groupids="*66" studentids="" weeks="1"/>
+      <lesson id="*116" classids="*14" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*21" groupids="*66" studentids="" weeks="1"/>
+      <lesson id="*117" classids="*14" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*29" classroomids="*4" groupids="*66" studentids="" weeks="1"/>
+      <lesson id="*118" classids="*14" subjectid="*12" periodspercard="1" periodsperweek="4.0" teacherids="*7" classroomids="*22" groupids="*66" studentids="" weeks="1"/>
+      <lesson id="*119" classids="*14" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*26" classroomids="*41" groupids="*66" studentids="" weeks="1"/>
+      <lesson id="*120" classids="*14" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*25" classroomids="*18" groupids="*66" studentids="" weeks="1"/>
+      <lesson id="*121" classids="*14" subjectid="*15" periodspercard="1" periodsperweek="2.0" teacherids="*18" classroomids="*29" groupids="*66" studentids="" weeks="1"/>
+      <lesson id="*122" classids="*15" subjectid="*1" periodspercard="1" periodsperweek="2.0" teacherids="*1" classroomids="*17" groupids="*71" studentids="" weeks="1"/>
+      <lesson id="*123" classids="*15" subjectid="*26" periodspercard="1" periodsperweek="3.0" teacherids="*1" classroomids="*17" groupids="*71" studentids="" weeks="1"/>
+      <lesson id="*124" classids="*15" subjectid="*26" periodspercard="1" periodsperweek="0.5" teacherids="*1" classroomids="*17" groupids="*71" studentids="" weeks="01"/>
+      <lesson id="*125" classids="*15" subjectid="*3" periodspercard="1" periodsperweek="3.0" teacherids="*11" classroomids="*9" groupids="*71" studentids="" weeks="1"/>
+      <lesson id="*126" classids="*15" subjectid="*6" periodspercard="1" periodsperweek="2.0" teacherids="*20" classroomids="*4" groupids="*71" studentids="" weeks="1"/>
+      <lesson id="*127" classids="*15" subjectid="*14" periodspercard="1" periodsperweek="2.0" teacherids="*21" classroomids="*20" groupids="*71" studentids="" weeks="1"/>
+      <lesson id="*128" classids="*15" subjectid="*5" periodspercard="1" periodsperweek="2.0" teacherids="*9" classroomids="*6" groupids="*71" studentids="" weeks="1"/>
+      <lesson id="*129" classids="*15" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*21" groupids="*71" studentids="" weeks="1"/>
+      <lesson id="*130" classids="*15" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*29" classroomids="*4" groupids="*71" studentids="" weeks="1"/>
+      <lesson id="*131" classids="*15" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*26" classroomids="*41" groupids="*71" studentids="" weeks="1"/>
+      <lesson id="*132" classids="*15" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*25" classroomids="*18" groupids="*71" studentids="" weeks="1"/>
+      <lesson id="*133" classids="*15" subjectid="*15" periodspercard="1" periodsperweek="2.0" teacherids="*18" classroomids="*29" groupids="*71" studentids="" weeks="1"/>
+      <lesson id="*134" classids="*16" subjectid="*1" periodspercard="1" periodsperweek="2.0" teacherids="*5" classroomids="*15" groupids="*76" studentids="" weeks="1"/>
+      <lesson id="*135" classids="*16" subjectid="*26" periodspercard="1" periodsperweek="3.0" teacherids="*1" classroomids="*17" groupids="*76" studentids="" weeks="1"/>
+      <lesson id="*136" classids="*16" subjectid="*26" periodspercard="1" periodsperweek="0.5" teacherids="*1" classroomids="*17" groupids="*76" studentids="" weeks="10"/>
+      <lesson id="*137" classids="*16" subjectid="*3" periodspercard="1" periodsperweek="3.0" teacherids="*11" classroomids="*9" groupids="*76" studentids="" weeks="1"/>
+      <lesson id="*138" classids="*16" subjectid="*6" periodspercard="1" periodsperweek="2.0" teacherids="*20" classroomids="*4" groupids="*76" studentids="" weeks="1"/>
+      <lesson id="*139" classids="*16" subjectid="*14" periodspercard="1" periodsperweek="2.0" teacherids="*21" classroomids="*20" groupids="*76" studentids="" weeks="1"/>
+      <lesson id="*140" classids="*16" subjectid="*5" periodspercard="1" periodsperweek="2.0" teacherids="*9" classroomids="*6" groupids="*76" studentids="" weeks="1"/>
+      <lesson id="*141" classids="*16" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*21" groupids="*76" studentids="" weeks="1"/>
+      <lesson id="*142" classids="*16" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*29" classroomids="*4" groupids="*76" studentids="" weeks="1"/>
+      <lesson id="*143" classids="*16" subjectid="*12" periodspercard="1" periodsperweek="4.0" teacherids="*7" classroomids="*22" groupids="*76" studentids="" weeks="1"/>
+      <lesson id="*144" classids="*16" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*25" classroomids="*18" groupids="*76" studentids="" weeks="1"/>
+      <lesson id="*145" classids="*16" subjectid="*15" periodspercard="1" periodsperweek="2.0" teacherids="*18" classroomids="*29" groupids="*76" studentids="" weeks="1"/>
+      <lesson id="*146" classids="*17" subjectid="*1" periodspercard="1" periodsperweek="2.0" teacherids="*4" classroomids="*10" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*147" classids="*17" subjectid="*26" periodspercard="1" periodsperweek="2.0" teacherids="*4" classroomids="*10" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*148" classids="*17" subjectid="*26" periodspercard="1" periodsperweek="0.5" teacherids="*4" classroomids="*10" groupids="*81" studentids="" weeks="01"/>
+      <lesson id="*149" classids="*17" subjectid="*3" periodspercard="1" periodsperweek="3.0" teacherids="*12" classroomids="*11" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*150" classids="*17" subjectid="*18" periodspercard="1" periodsperweek="1.0" teacherids="*22" classroomids="*26" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*151" classids="*17" subjectid="*18" periodspercard="1" periodsperweek="0.5" teacherids="*22" classroomids="*26" groupids="*81" studentids="" weeks="10"/>
+      <lesson id="*152" classids="*17" subjectid="*14" periodspercard="1" periodsperweek="2.0" teacherids="*22" classroomids="*20" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*153" classids="*17" subjectid="*16" periodspercard="1" periodsperweek="2.0" teacherids="*15" classroomids="*25" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*154" classids="*17" subjectid="*5" periodspercard="1" periodsperweek="2.0" teacherids="*9" classroomids="*6" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*155" classids="*17" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*29" classroomids="*4" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*156" classids="*17" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*26" classroomids="*41" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*157" classids="*17" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*25" classroomids="*18" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*158" classids="*17" subjectid="*15" periodspercard="1" periodsperweek="2.0" teacherids="*18" classroomids="*29" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*159" classids="*18" subjectid="*1" periodspercard="1" periodsperweek="2.0" teacherids="*4" classroomids="*10" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*160" classids="*18" subjectid="*26" periodspercard="1" periodsperweek="2.0" teacherids="*4" classroomids="*10" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*161" classids="*18" subjectid="*26" periodspercard="1" periodsperweek="0.5" teacherids="*4" classroomids="*10" groupids="*86" studentids="" weeks="01"/>
+      <lesson id="*162" classids="*18" subjectid="*3" periodspercard="1" periodsperweek="3.0" teacherids="*12" classroomids="*11" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*163" classids="*18" subjectid="*18" periodspercard="1" periodsperweek="1.0" teacherids="*22" classroomids="*26" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*164" classids="*18" subjectid="*18" periodspercard="1" periodsperweek="0.5" teacherids="*22" classroomids="*26" groupids="*86" studentids="" weeks="10"/>
+      <lesson id="*165" classids="*18" subjectid="*14" periodspercard="1" periodsperweek="2.0" teacherids="*22" classroomids="*20" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*166" classids="*18" subjectid="*16" periodspercard="1" periodsperweek="2.0" teacherids="*15" classroomids="*25" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*167" classids="*18" subjectid="*5" periodspercard="1" periodsperweek="2.0" teacherids="*9" classroomids="*6" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*168" classids="*18" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*21" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*169" classids="*18" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*29" classroomids="*4" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*170" classids="*18" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*25" classroomids="*18" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*171" classids="*18" subjectid="*15" periodspercard="1" periodsperweek="2.0" teacherids="*18" classroomids="*29" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*172" classids="*19" subjectid="*1" periodspercard="1" periodsperweek="2.0" teacherids="*5" classroomids="*15" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*173" classids="*19" subjectid="*3" periodspercard="1" periodsperweek="2.0" teacherids="*12" classroomids="*11" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*174" classids="*19" subjectid="*18" periodspercard="1" periodsperweek="2.0" teacherids="*22" classroomids="*26" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*175" classids="*19" subjectid="*14" periodspercard="1" periodsperweek="2.0" teacherids="*21" classroomids="*20" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*176" classids="*19" subjectid="*16" periodspercard="1" periodsperweek="2.0" teacherids="*15" classroomids="*25" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*177" classids="*19" subjectid="*5" periodspercard="1" periodsperweek="2.0" teacherids="*10" classroomids="*13" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*178" classids="*19" subjectid="*10" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*21" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*179" classids="*19" subjectid="*26" periodspercard="1" periodsperweek="2.0" teacherids="*6" classroomids="*12" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*180" classids="*19" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*29" classroomids="*4" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*181" classids="*19" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*27" classroomids="*40" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*182" classids="*19" subjectid="*15" periodspercard="1" periodsperweek="2.0" teacherids="*18" classroomids="*29" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*183" classids="*20" subjectid="*1" periodspercard="1" periodsperweek="2.0" teacherids="*5" classroomids="*15" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*184" classids="*20" subjectid="*3" periodspercard="1" periodsperweek="2.0" teacherids="*12" classroomids="*11" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*185" classids="*20" subjectid="*18" periodspercard="1" periodsperweek="2.0" teacherids="*22" classroomids="*26" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*186" classids="*20" subjectid="*16" periodspercard="1" periodsperweek="2.0" teacherids="*15" classroomids="*25" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*187" classids="*20" subjectid="*5" periodspercard="1" periodsperweek="2.0" teacherids="*10" classroomids="*13" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*188" classids="*20" subjectid="*10" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*21" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*189" classids="*20" subjectid="*26" periodspercard="1" periodsperweek="2.0" teacherids="*6" classroomids="*12" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*190" classids="*20" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*28" classroomids="*4" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*191" classids="*20" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*27" classroomids="*40" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*192" classids="*20" subjectid="*15" periodspercard="1" periodsperweek="2.0" teacherids="*18" classroomids="*29" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*193" classids="*21" subjectid="*1" periodspercard="1" periodsperweek="2.0" teacherids="*4" classroomids="*10" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*194" classids="*21" subjectid="*8" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="*14" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*195" classids="*21" subjectid="*18" periodspercard="1" periodsperweek="2.0" teacherids="*22" classroomids="*26" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*196" classids="*21" subjectid="*14" periodspercard="1" periodsperweek="2.0" teacherids="*21" classroomids="*20" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*197" classids="*21" subjectid="*16" periodspercard="1" periodsperweek="3.0" teacherids="*15" classroomids="*25" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*198" classids="*21" subjectid="*10" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*21" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*199" classids="*21" subjectid="*3" periodspercard="1" periodsperweek="2.0" teacherids="*12" classroomids="*11" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*200" classids="*21" subjectid="*26" periodspercard="1" periodsperweek="2.0" teacherids="*4" classroomids="*10" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*201" classids="*21" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*28" classroomids="*4" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*202" classids="*21" subjectid="*15" periodspercard="1" periodsperweek="1.0" teacherids="*18" classroomids="*29" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*203" classids="*21" subjectid="*15" periodspercard="1" periodsperweek="0.5" teacherids="*18" classroomids="*29" groupids="*101" studentids="" weeks="10"/>
+      <lesson id="*204" classids="*22" subjectid="*1" periodspercard="1" periodsperweek="2.0" teacherids="*4" classroomids="*10" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*205" classids="*22" subjectid="*8" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="*14" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*206" classids="*22" subjectid="*18" periodspercard="1" periodsperweek="2.0" teacherids="*22" classroomids="*26" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*207" classids="*22" subjectid="*14" periodspercard="1" periodsperweek="2.0" teacherids="*21" classroomids="*20" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*208" classids="*22" subjectid="*16" periodspercard="1" periodsperweek="3.0" teacherids="*15" classroomids="*25" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*209" classids="*22" subjectid="*10" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*21" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*210" classids="*22" subjectid="*3" periodspercard="1" periodsperweek="2.0" teacherids="*12" classroomids="*11" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*211" classids="*22" subjectid="*26" periodspercard="1" periodsperweek="4.0" teacherids="*4" classroomids="*10" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*212" classids="*22" subjectid="*22" periodspercard="1" periodsperweek="1.0" teacherids="*28" classroomids="*4" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*213" classids="*22" subjectid="*15" periodspercard="1" periodsperweek="1.0" teacherids="*18" classroomids="*29" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*214" classids="*22" subjectid="*15" periodspercard="1" periodsperweek="0.5" teacherids="*18" classroomids="*29" groupids="*106" studentids="" weeks="01"/>
+      <lesson id="*215" classids="*22" subjectid="*5" periodspercard="1" periodsperweek="2.0" teacherids="*10" classroomids="*13" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*216" classids="*26" subjectid="*25" periodspercard="1" periodsperweek="2.0" teacherids="*32" classroomids="*31" groupids="*126" studentids="" weeks="1"/>
+      <lesson id="*217" classids="*26" subjectid="*25" periodspercard="1" periodsperweek="1.0" teacherids="*24" classroomids="*31" groupids="*126" studentids="" weeks="1"/>
+      <lesson id="*218" classids="*26" subjectid="*25" periodspercard="1" periodsperweek="4.0" teacherids="*35" classroomids="*31" groupids="*126" studentids="" weeks="1"/>
+      <lesson id="*219" classids="*26" subjectid="*25" periodspercard="1" periodsperweek="1.0" teacherids="*37" classroomids="*31" groupids="*126" studentids="" weeks="1"/>
+      <lesson id="*220" classids="*27" subjectid="*25" periodspercard="1" periodsperweek="2.0" teacherids="*9" classroomids="*4" groupids="*131" studentids="" weeks="1"/>
+      <lesson id="*221" classids="*27" subjectid="*25" periodspercard="1" periodsperweek="5.0" teacherids="*31" classroomids="*32" groupids="*131" studentids="" weeks="1"/>
+      <lesson id="*222" classids="*28" subjectid="*25" periodspercard="1" periodsperweek="7.0" teacherids="*42" classroomids="*34" groupids="*136" studentids="" weeks="1"/>
+      <lesson id="*223" classids="*28" subjectid="*25" periodspercard="1" periodsperweek="1.0" teacherids="*33" classroomids="*34" groupids="*136" studentids="" weeks="1"/>
+      <lesson id="*224" classids="*28" subjectid="*25" periodspercard="1" periodsperweek="2.0" teacherids="*35" classroomids="*34" groupids="*136" studentids="" weeks="1"/>
+      <lesson id="*225" classids="*11" subjectid="*1" periodspercard="1" periodsperweek="2.0" teacherids="*6" classroomids="*12" groupids="*51" studentids="" weeks="1"/>
+      <lesson id="*226" classids="*11" subjectid="*11" periodspercard="1" periodsperweek="1.0" teacherids="*25" classroomids="*18" groupids="*51" studentids="" weeks="1"/>
+      <lesson id="*227" classids="*16" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*27" classroomids="*40" groupids="*76" studentids="" weeks="1"/>
+      <lesson id="*228" classids="*18" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*27" classroomids="*40" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*229" classids="*21" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*26" classroomids="*41" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*230" classids="*22" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*26" classroomids="*41" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*231" classids="*23" subjectid="*24" periodspercard="1" periodsperweek="1.0" teacherids="*28,*21" classroomids="*16" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*232" classids="*23" subjectid="*24" periodspercard="1" periodsperweek="0.5" teacherids="*28,*21" classroomids="*16" groupids="*111" studentids="" weeks="01"/>
+      <lesson id="*233" classids="*24" subjectid="*24" periodspercard="1" periodsperweek="1.0" teacherids="*28,*21" classroomids="*16" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*234" classids="*24" subjectid="*24" periodspercard="1" periodsperweek="0.5" teacherids="*28,*21" classroomids="*16" groupids="*116" studentids="" weeks="10"/>
+      <lesson id="*235" classids="*25" subjectid="*24" periodspercard="1" periodsperweek="1.0" teacherids="*28,*21" classroomids="*16" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*236" classids="*25" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*14,*17" classroomids="*19" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*237" classids="*25" subjectid="*21" periodspercard="1" periodsperweek="0.5" teacherids="*14,*17" classroomids="*19" groupids="*121" studentids="" weeks="10"/>
+      <lesson id="*238" classids="*4" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*16,*14" classroomids="*19" groupids="*16" studentids="" weeks="1"/>
+      <lesson id="*239" classids="*5" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*16,*14" classroomids="*28" groupids="*21" studentids="" weeks="1"/>
+      <lesson id="*240" classids="*6" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*16,*14" classroomids="*19" groupids="*26" studentids="" weeks="1"/>
+      <lesson id="*241" classids="*7" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*16,*15" classroomids="*19" groupids="*31" studentids="" weeks="1"/>
+      <lesson id="*242" classids="*8" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*16,*15" classroomids="*19" groupids="*36" studentids="" weeks="1"/>
+      <lesson id="*243" classids="*9" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*15,*16" classroomids="*19" groupids="*41" studentids="" weeks="1"/>
+      <lesson id="*244" classids="*10" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*15,*16" classroomids="*19" groupids="*46" studentids="" weeks="1"/>
+      <lesson id="*245" classids="*11" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*14,*15" classroomids="*19" groupids="*51" studentids="" weeks="1"/>
+      <lesson id="*246" classids="*12" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*14,*17" classroomids="*19" groupids="*56" studentids="" weeks="1"/>
+      <lesson id="*247" classids="*13" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*17,*15" classroomids="*27" groupids="*61" studentids="" weeks="1"/>
+      <lesson id="*248" classids="*14" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*15,*17" classroomids="*28" groupids="*66" studentids="" weeks="1"/>
+      <lesson id="*249" classids="*15" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*15,*17" classroomids="*28" groupids="*71" studentids="" weeks="1"/>
+      <lesson id="*250" classids="*16" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*15,*17" classroomids="*28" groupids="*76" studentids="" weeks="1"/>
+      <lesson id="*251" classids="*17" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*14,*17" classroomids="*19" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*252" classids="*18" subjectid="*21" periodspercard="1" periodsperweek="1.0" teacherids="*14,*17" classroomids="*19" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*253" classids="*19" subjectid="*21" periodspercard="1" periodsperweek="2.0" teacherids="*14,*17" classroomids="*19" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*254" classids="*20" subjectid="*21" periodspercard="1" periodsperweek="2.0" teacherids="*14,*17" classroomids="*19" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*255" classids="*21" subjectid="*21" periodspercard="1" periodsperweek="2.0" teacherids="*14,*17" classroomids="*19" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*256" classids="*22" subjectid="*21" periodspercard="1" periodsperweek="2.0" teacherids="*14,*17" classroomids="*19" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*257" classids="*23" subjectid="*5" periodspercard="1" periodsperweek="1.0" teacherids="*9" classroomids="*6" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*258" classids="*24" subjectid="*5" periodspercard="1" periodsperweek="1.0" teacherids="*9" classroomids="*6" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*259" classids="*21" subjectid="*5" periodspercard="1" periodsperweek="2.0" teacherids="*10" classroomids="*13" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*260" classids="*2" subjectid="*30" periodspercard="1" periodsperweek="4.0" teacherids="*37" classroomids="" groupids="*6" studentids="" weeks="1"/>
+      <lesson id="*261" classids="*1" subjectid="*30" periodspercard="1" periodsperweek="4.0" teacherids="*36" classroomids="" groupids="*1" studentids="" weeks="1"/>
+      <lesson id="*262" classids="*1" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="" groupids="*1" studentids="" weeks="1"/>
+      <lesson id="*263" classids="*3" subjectid="*30" periodspercard="1" periodsperweek="4.0" teacherids="*38" classroomids="" groupids="*11" studentids="" weeks="1"/>
+      <lesson id="*264" classids="*4" subjectid="*30" periodspercard="1" periodsperweek="4.0" teacherids="*39" classroomids="" groupids="*16" studentids="" weeks="1"/>
+      <lesson id="*265" classids="*5" subjectid="*30" periodspercard="1" periodsperweek="4.0" teacherids="*40" classroomids="" groupids="*21" studentids="" weeks="1"/>
+      <lesson id="*266" classids="*6" subjectid="*30" periodspercard="1" periodsperweek="4.0" teacherids="*41" classroomids="" groupids="*26" studentids="" weeks="1"/>
+      <lesson id="*267" classids="*7" subjectid="*30" periodspercard="1" periodsperweek="4.0" teacherids="*32" classroomids="" groupids="*31" studentids="" weeks="1"/>
+      <lesson id="*268" classids="*8" subjectid="*30" periodspercard="1" periodsperweek="4.0" teacherids="*33" classroomids="" groupids="*36" studentids="" weeks="1"/>
+      <lesson id="*269" classids="*9" subjectid="*30" periodspercard="1" periodsperweek="4.0" teacherids="*34" classroomids="" groupids="*41" studentids="" weeks="1"/>
+      <lesson id="*270" classids="*10" subjectid="*30" periodspercard="1" periodsperweek="4.0" teacherids="*35" classroomids="" groupids="*46" studentids="" weeks="1"/>
+      <lesson id="*271" classids="*25" subjectid="*15" periodspercard="1" periodsperweek="1.0" teacherids="*17" classroomids="*29,*27" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*272" classids="*23" subjectid="*15" periodspercard="1" periodsperweek="0.5" teacherids="*17" classroomids="*29,*27" groupids="*111" studentids="" weeks="10"/>
+      <lesson id="*273" classids="*23" subjectid="*15" periodspercard="1" periodsperweek="1.0" teacherids="*17" classroomids="*29,*27" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*274" classids="*25" subjectid="*24" periodspercard="1" periodsperweek="0.5" teacherids="*28,*21" classroomids="*16" groupids="*121" studentids="" weeks="01"/>
+      <lesson id="*275" classids="*27" subjectid="*25" periodspercard="1" periodsperweek="7.0" teacherids="*41" classroomids="*32" groupids="*131" studentids="" weeks="1"/>
+      <lesson id="*276" classids="*26" subjectid="*25" periodspercard="1" periodsperweek="6.0" teacherids="*42" classroomids="*31" groupids="*126" studentids="" weeks="1"/>
+      <lesson id="*277" classids="*23" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*26" classroomids="*41" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*278" classids="*24" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*26" classroomids="*41" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*279" classids="*10" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*35" classroomids="*41,*40,*42" groupids="*46" studentids="" weeks="1"/>
+      <lesson id="*280" classids="*9" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*34" classroomids="*40,*41,*42" groupids="*41" studentids="" weeks="1"/>
+      <lesson id="*281" classids="*8" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*33" classroomids="*42,*40,*41" groupids="*36" studentids="" weeks="1"/>
+      <lesson id="*282" classids="*7" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*32" classroomids="*40,*41,*42" groupids="*31" studentids="" weeks="1"/>
+      <lesson id="*283" classids="*6" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*41" classroomids="*42,*41,*40" groupids="*26" studentids="" weeks="1"/>
+      <lesson id="*284" classids="*5" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*40" classroomids="*40,*41,*42" groupids="*21" studentids="" weeks="1"/>
+      <lesson id="*285" classids="*4" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*39" classroomids="*41,*40,*42" groupids="*16" studentids="" weeks="1"/>
+      <lesson id="*286" classids="*3" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*38" classroomids="*42,*41,*40" groupids="*11" studentids="" weeks="1"/>
+      <lesson id="*287" classids="*1" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*36" classroomids="*41,*40,*42" groupids="*1" studentids="" weeks="1"/>
+      <lesson id="*288" classids="*2" subjectid="*23" periodspercard="1" periodsperweek="3.0" teacherids="*37" classroomids="*40,*41,*42" groupids="*6" studentids="" weeks="1"/>
+      <lesson id="*289" classids="*13" subjectid="*13" periodspercard="1" periodsperweek="2.0" teacherids="*21" classroomids="*20,*18" groupids="*61" studentids="" weeks="1"/>
+      <lesson id="*290" classids="*12" subjectid="*13" periodspercard="1" periodsperweek="2.0" teacherids="*21" classroomids="*20,*18" groupids="*56" studentids="" weeks="1"/>
+      <lesson id="*291" classids="*11" subjectid="*13" periodspercard="1" periodsperweek="2.0" teacherids="*21" classroomids="*20,*18" groupids="*51" studentids="" weeks="1"/>
+      <lesson id="*292" classids="*21" subjectid="*19" periodspercard="1" periodsperweek="1.0" teacherids="*23" classroomids="*21,*18" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*293" classids="*23" subjectid="*14" periodspercard="1" periodsperweek="2.0" teacherids="*22" classroomids="*20,*26" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*294" classids="*20" subjectid="*14" periodspercard="1" periodsperweek="2.0" teacherids="*22" classroomids="*20,*26" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*295" classids="*24" subjectid="*18" periodspercard="1" periodsperweek="0.5" teacherids="*22" classroomids="*26" groupids="*116" studentids="" weeks="01"/>
+      <lesson id="*296" classids="*23" subjectid="*3" periodspercard="1" periodsperweek="2.0" teacherids="*12" classroomids="*9,*12" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*297" classids="*24" subjectid="*3" periodspercard="1" periodsperweek="3.0" teacherids="*6" classroomids="*11" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*298" classids="*11" subjectid="*3" periodspercard="1" periodsperweek="3.0" teacherids="*13" classroomids="*29,*4,*13" groupids="*51" studentids="" weeks="1"/>
+      <lesson id="*299" classids="*12" subjectid="*3" periodspercard="1" periodsperweek="3.0" teacherids="*11" classroomids="*9" groupids="*56" studentids="" weeks="1"/>
+      <lesson id="*300" classids="*15" subjectid="*12" periodspercard="1" periodsperweek="4.0" teacherids="*15" classroomids="*25" groupids="*71" studentids="" weeks="1"/>
+      <lesson id="*301" classids="*11,*12,*13" subjectid="*31" periodspercard="1" periodsperweek="2.0" teacherids="*13" classroomids="*4,*29" groupids="*51,*56,*61" studentids="" weeks="1"/>
+      <lesson id="*302" classids="*24,*23" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*23,*25" classroomids="*8" groupids="*116,*111" studentids="" weeks="1"/>
+      <lesson id="*303" classids="*25" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*23,*25" classroomids="*8" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*304" classids="*25" subjectid="*20" periodspercard="1" periodsperweek="0.5" teacherids="*23,*25" classroomids="*8" groupids="*121" studentids="" weeks="01"/>
+      <lesson id="*305" classids="*12,*13" subjectid="*20" periodspercard="2" periodsperweek="2.0" teacherids="*23,*25" classroomids="*8" groupids="*56,*61" studentids="" weeks="1"/>
+      <lesson id="*306" classids="*11" subjectid="*20" periodspercard="2" periodsperweek="2.0" teacherids="*23,*25" classroomids="*8" groupids="*51" studentids="" weeks="1"/>
+      <lesson id="*307" classids="*15" subjectid="*20" periodspercard="2" periodsperweek="2.0" teacherids="*23,*25" classroomids="*8" groupids="*71" studentids="" weeks="1"/>
+      <lesson id="*308" classids="*16" subjectid="*20" periodspercard="2" periodsperweek="2.0" teacherids="*23,*25" classroomids="*8" groupids="*76" studentids="" weeks="1"/>
+      <lesson id="*309" classids="*14" subjectid="*20" periodspercard="2" periodsperweek="2.0" teacherids="*23,*25" classroomids="*8" groupids="*66" studentids="" weeks="1"/>
+      <lesson id="*310" classids="*18" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*23,*25" classroomids="*8" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*311" classids="*17" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*23,*25" classroomids="*8" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*312" classids="*20" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*23,*25" classroomids="*8" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*313" classids="*19" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*23,*25" classroomids="*8" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*314" classids="*22" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*23,*25" classroomids="*8" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*315" classids="*21" subjectid="*20" periodspercard="1" periodsperweek="1.0" teacherids="*23,*25" classroomids="*8" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*316" classids="*21,*22" subjectid="*4" periodspercard="1" periodsperweek="2.0" teacherids="*13,*10,*9" classroomids="*29" groupids="*101,*106" studentids="" weeks="1"/>
+      <lesson id="*317" classids="*12" subjectid="*6" periodspercard="1" periodsperweek="1.0" teacherids="*3" classroomids="*12" groupids="*56" studentids="" weeks="1"/>
+      <lesson id="*318" classids="*13" subjectid="*6" periodspercard="1" periodsperweek="1.0" teacherids="*3" classroomids="*12" groupids="*61" studentids="" weeks="1"/>
+      <lesson id="*319" classids="*11" subjectid="*6" periodspercard="1" periodsperweek="1.0" teacherids="*3" classroomids="*12" groupids="*51" studentids="" weeks="1"/>
+      <lesson id="*320" classids="*17" subjectid="*9" periodspercard="1" periodsperweek="1.0" teacherids="*30" classroomids="*21,*4" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*321" classids="*19,*20" subjectid="*4" periodspercard="1" periodsperweek="2.0" teacherids="*13,*10,*9" classroomids="*29,*11,*22" groupids="*91,*96" studentids="" weeks="1"/>
+      <lesson id="*322" classids="*30" subjectid="*25" periodspercard="1" periodsperweek="6.0" teacherids="*34" classroomids="" groupids="*146" studentids="" weeks="1"/>
+      <lesson id="*323" classids="*30" subjectid="*25" periodspercard="1" periodsperweek="6.0" teacherids="*37" classroomids="" groupids="*146" studentids="" weeks="1"/>
+      <lesson id="*324" classids="*30" subjectid="*25" periodspercard="1" periodsperweek="0.5" teacherids="*37" classroomids="" groupids="*146" studentids="" weeks="01"/>
+      <lesson id="*325" classids="*30" subjectid="*25" periodspercard="1" periodsperweek="1.0" teacherids="*12" classroomids="" groupids="*146" studentids="" weeks="1"/>
+      <lesson id="*326" classids="*30" subjectid="*25" periodspercard="1" periodsperweek="0.5" teacherids="*34" classroomids="" groupids="*146" studentids="" weeks="10"/>
+      <lesson id="*327" classids="*29" subjectid="*25" periodspercard="1" periodsperweek="3.0" teacherids="*24" classroomids="" groupids="*141" studentids="" weeks="1"/>
+      <lesson id="*328" classids="*29" subjectid="*25" periodspercard="1" periodsperweek="6.0" teacherids="*29" classroomids="" groupids="*141" studentids="" weeks="1"/>
+      <lesson id="*329" classids="*4" subjectid="*27" periodspercard="1" periodsperweek="3.0" teacherids="*39" classroomids="*37" groupids="*16" studentids="" weeks="1"/>
+      <lesson id="*330" classids="*4" subjectid="*2" periodspercard="1" periodsperweek="4.0" teacherids="*39" classroomids="" groupids="*16" studentids="" weeks="1"/>
+      <lesson id="*331" classids="*5" subjectid="*27" periodspercard="1" periodsperweek="3.0" teacherids="*40" classroomids="*38" groupids="*21" studentids="" weeks="1"/>
+      <lesson id="*332" classids="*5" subjectid="*2" periodspercard="1" periodsperweek="4.0" teacherids="*40" classroomids="" groupids="*21" studentids="" weeks="1"/>
+      <lesson id="*333" classids="*6" subjectid="*27" periodspercard="1" periodsperweek="3.0" teacherids="*41" classroomids="*39" groupids="*26" studentids="" weeks="1"/>
+      <lesson id="*334" classids="*6" subjectid="*2" periodspercard="1" periodsperweek="4.0" teacherids="*41" classroomids="" groupids="*26" studentids="" weeks="1"/>
+      <lesson id="*335" classids="*7" subjectid="*2" periodspercard="1" periodsperweek="3.0" teacherids="*32" classroomids="*5" groupids="*31" studentids="" weeks="1"/>
+      <lesson id="*336" classids="*7" subjectid="*26" periodspercard="1" periodsperweek="4.0" teacherids="*32" classroomids="*5" groupids="*31" studentids="" weeks="1"/>
+      <lesson id="*337" classids="*8" subjectid="*2" periodspercard="1" periodsperweek="3.0" teacherids="*33" classroomids="*7" groupids="*36" studentids="" weeks="1"/>
+      <lesson id="*338" classids="*8" subjectid="*26" periodspercard="1" periodsperweek="4.0" teacherids="*33" classroomids="*7" groupids="*36" studentids="" weeks="1"/>
+      <lesson id="*339" classids="*9" subjectid="*2" periodspercard="1" periodsperweek="3.0" teacherids="*34" classroomids="*2" groupids="*41" studentids="" weeks="1"/>
+      <lesson id="*340" classids="*9" subjectid="*26" periodspercard="1" periodsperweek="4.0" teacherids="*34" classroomids="*2" groupids="*41" studentids="" weeks="1"/>
+      <lesson id="*341" classids="*10" subjectid="*2" periodspercard="1" periodsperweek="3.0" teacherids="*35" classroomids="*1" groupids="*46" studentids="" weeks="1"/>
+      <lesson id="*342" classids="*10" subjectid="*26" periodspercard="1" periodsperweek="4.0" teacherids="*35" classroomids="*1" groupids="*46" studentids="" weeks="1"/>
+      <lesson id="*343" classids="*25" subjectid="*32" periodspercard="1" periodsperweek="3.0" teacherids="*3" classroomids="" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*344" classids="*25" subjectid="*33" periodspercard="1" periodsperweek="3.0" teacherids="*3" classroomids="" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*345" classids="*24" subjectid="*34" periodspercard="1" periodsperweek="2.0" teacherids="*7" classroomids="" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*346" classids="*23" subjectid="*34" periodspercard="1" periodsperweek="6.0" teacherids="*7" classroomids="" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*347" classids="*23" subjectid="*35" periodspercard="1" periodsperweek="3.0" teacherids="*7" classroomids="*22" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*348" classids="*25" subjectid="*35" periodspercard="1" periodsperweek="2.0" teacherids="*7" classroomids="" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*349" classids="*25" subjectid="*34" periodspercard="1" periodsperweek="2.0" teacherids="*7" classroomids="" groupids="*121" studentids="" weeks="1"/>
+      <lesson id="*350" classids="*20" subjectid="*34" periodspercard="1" periodsperweek="2.0" teacherids="*7" classroomids="" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*351" classids="*20" subjectid="*35" periodspercard="1" periodsperweek="2.0" teacherids="*7" classroomids="" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*352" classids="*24" subjectid="*35" periodspercard="1" periodsperweek="2.0" teacherids="*8" classroomids="" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*353" classids="*17" subjectid="*34" periodspercard="1" periodsperweek="2.0" teacherids="*8" classroomids="" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*354" classids="*17" subjectid="*35" periodspercard="1" periodsperweek="2.0" teacherids="*8" classroomids="" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*355" classids="*19" subjectid="*34" periodspercard="1" periodsperweek="2.0" teacherids="*8" classroomids="" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*356" classids="*19" subjectid="*35" periodspercard="1" periodsperweek="2.0" teacherids="*8" classroomids="" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*357" classids="*22" subjectid="*34" periodspercard="1" periodsperweek="2.0" teacherids="*8" classroomids="" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*358" classids="*22" subjectid="*35" periodspercard="1" periodsperweek="2.0" teacherids="*8" classroomids="" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*359" classids="*21" subjectid="*34" periodspercard="1" periodsperweek="2.0" teacherids="*8" classroomids="" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*360" classids="*21" subjectid="*35" periodspercard="1" periodsperweek="2.0" teacherids="*8" classroomids="" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*361" classids="*18" subjectid="*34" periodspercard="1" periodsperweek="2.0" teacherids="*14" classroomids="" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*362" classids="*18" subjectid="*35" periodspercard="1" periodsperweek="2.0" teacherids="*14" classroomids="" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*363" classids="*24" subjectid="*32" periodspercard="1" periodsperweek="3.0" teacherids="*19" classroomids="" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*364" classids="*24" subjectid="*33" periodspercard="1" periodsperweek="3.0" teacherids="*19" classroomids="" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*365" classids="*21" subjectid="*32" periodspercard="1" periodsperweek="0.5" teacherids="*19" classroomids="" groupids="*101" studentids="" weeks="01"/>
+      <lesson id="*366" classids="*22" subjectid="*32" periodspercard="1" periodsperweek="0.5" teacherids="*19" classroomids="" groupids="*106" studentids="" weeks="10"/>
+      <lesson id="*367" classids="*19" subjectid="*32" periodspercard="1" periodsperweek="0.5" teacherids="*19" classroomids="" groupids="*91" studentids="" weeks="01"/>
+      <lesson id="*368" classids="*20" subjectid="*32" periodspercard="1" periodsperweek="0.5" teacherids="*19" classroomids="" groupids="*96" studentids="" weeks="10"/>
+      <lesson id="*369" classids="*18" subjectid="*32" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*370" classids="*17" subjectid="*32" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*371" classids="*17" subjectid="*33" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="" groupids="*81" studentids="" weeks="1"/>
+      <lesson id="*372" classids="*18" subjectid="*33" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="" groupids="*86" studentids="" weeks="1"/>
+      <lesson id="*373" classids="*23" subjectid="*32" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*374" classids="*23" subjectid="*33" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*375" classids="*23" subjectid="*32" periodspercard="1" periodsperweek="0.5" teacherids="*19" classroomids="" groupids="*111" studentids="" weeks="01"/>
+      <lesson id="*376" classids="*19" subjectid="*32" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*377" classids="*19" subjectid="*33" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="" groupids="*91" studentids="" weeks="1"/>
+      <lesson id="*378" classids="*20" subjectid="*32" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*379" classids="*20" subjectid="*33" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="" groupids="*96" studentids="" weeks="1"/>
+      <lesson id="*380" classids="*22" subjectid="*32" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*381" classids="*21" subjectid="*33" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*382" classids="*21" subjectid="*32" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="" groupids="*101" studentids="" weeks="1"/>
+      <lesson id="*383" classids="*22" subjectid="*33" periodspercard="1" periodsperweek="1.0" teacherids="*19" classroomids="" groupids="*106" studentids="" weeks="1"/>
+      <lesson id="*384" classids="*29" subjectid="*25" periodspercard="5" periodsperweek="5.0" teacherids="*33" classroomids="" groupids="*141" studentids="" weeks="1"/>
+      <lesson id="*385" classids="*23" subjectid="*21" periodspercard="1" periodsperweek="2.0" teacherids="*17,*14" classroomids="*27" groupids="*111" studentids="" weeks="1"/>
+      <lesson id="*386" classids="*24" subjectid="*21" periodspercard="1" periodsperweek="2.0" teacherids="*17" classroomids="*27" groupids="*116" studentids="" weeks="1"/>
+      <lesson id="*387" classids="*11" subjectid="*26" periodspercard="1" periodsperweek="0.5" teacherids="*6" classroomids="*12" groupids="*51" studentids="" weeks="10"/>
+   </lessons>
+   <cards options="canadd" columns="lessonid,day,period,classroomids">
+      <card lessonid="*1" classroomids="*15" day="4" period="2"/>
+      <card lessonid="*1" classroomids="*15" day="0" period="5"/>
+      <card lessonid="*2" classroomids="*15" day="2" period="4"/>
+      <card lessonid="*2" classroomids="*15" day="0" period="7"/>
+      <card lessonid="*3" classroomids="*9" day="4" period="1"/>
+      <card lessonid="*3" classroomids="*9" day="1" period="6"/>
+      <card lessonid="*3" classroomids="*9" day="3" period="4"/>
+      <card lessonid="*4" classroomids="*26" day="0" period="4"/>
+      <card lessonid="*4" classroomids="*26" day="3" period="5"/>
+      <card lessonid="*5" classroomids="*20" day="0" period="6"/>
+      <card lessonid="*5" classroomids="*20" day="3" period="7"/>
+      <card lessonid="*6" classroomids="*25" day="1" period="3"/>
+      <card lessonid="*6" classroomids="*25" day="4" period="3"/>
+      <card lessonid="*6" classroomids="*25" day="3" period="1"/>
+      <card lessonid="*7" classroomids="*25" day="4" period="4"/>
+      <card lessonid="*8" classroomids="*6" day="4" period="7"/>
+      <card lessonid="*9" classroomids="*41" day="4" period="6"/>
+      <card lessonid="*9" classroomids="*41" day="2" period="5"/>
+      <card lessonid="*9" classroomids="*41" day="1" period="7"/>
+      <card lessonid="*10" classroomids="*15" day="2" period="6"/>
+      <card lessonid="*10" classroomids="*15" day="0" period="3"/>
+      <card lessonid="*11" classroomids="*15" day="3" period="7"/>
+      <card lessonid="*11" classroomids="*15" day="1" period="2"/>
+      <card lessonid="*12" classroomids="*27" day="2" period="3"/>
+      <card lessonid="*12" classroomids="*27" day="4" period="3"/>
+      <card lessonid="*13" classroomids="*26" day="1" period="3"/>
+      <card lessonid="*14" classroomids="*26" day="3" period="6"/>
+      <card lessonid="*15" classroomids="*25" day="4" period="1"/>
+      <card lessonid="*15" classroomids="*25" day="3" period="2"/>
+      <card lessonid="*15" classroomids="*25" day="1" period="1"/>
+      <card lessonid="*16" classroomids="*15" day="4" period="1"/>
+      <card lessonid="*16" classroomids="*15" day="1" period="1"/>
+      <card lessonid="*17" classroomids="*15" day="2" period="7"/>
+      <card lessonid="*17" classroomids="*15" day="0" period="2"/>
+      <card lessonid="*18" classroomids="*14" day="1" period="5"/>
+      <card lessonid="*18" classroomids="*14" day="4" period="4"/>
+      <card lessonid="*19" classroomids="*26" day="4" period="7"/>
+      <card lessonid="*20" classroomids="*20" day="2" period="5"/>
+      <card lessonid="*20" classroomids="*20" day="1" period="7"/>
+      <card lessonid="*21" classroomids="*25" day="4" period="2"/>
+      <card lessonid="*21" classroomids="*25" day="1" period="2"/>
+      <card lessonid="*21" classroomids="*25" day="3" period="3"/>
+      <card lessonid="*22" classroomids="*29" day="2" period="1"/>
+      <card lessonid="*23" classroomids="*29" day="0" period="7"/>
+      <card lessonid="*24" classroomids="*35" day="2" period="3"/>
+      <card lessonid="*24" classroomids="*35" day="1" period="1"/>
+      <card lessonid="*25" classroomids="*35" day="1" period="3"/>
+      <card lessonid="*26" classroomids="*35" day="3" period="5"/>
+      <card lessonid="*27" classroomids="*35" day="2" period="4"/>
+      <card lessonid="*27" classroomids="*35" day="0" period="3"/>
+      <card lessonid="*27" classroomids="*35" day="4" period="3"/>
+      <card lessonid="*27" classroomids="*35" day="1" period="4"/>
+      <card lessonid="*27" classroomids="*35" day="3" period="2"/>
+      <card lessonid="*27" classroomids="*35" day="3" period="1"/>
+      <card lessonid="*27" classroomids="*35" day="0" period="4"/>
+      <card lessonid="*28" classroomids="*35" day="4" period="1"/>
+      <card lessonid="*28" classroomids="*35" day="0" period="1"/>
+      <card lessonid="*28" classroomids="*35" day="2" period="1"/>
+      <card lessonid="*29" classroomids="*35" day="3" period="4"/>
+      <card lessonid="*30" classroomids="*36" day="1" period="2"/>
+      <card lessonid="*30" classroomids="*36" day="4" period="1"/>
+      <card lessonid="*31" classroomids="*36" day="0" period="5"/>
+      <card lessonid="*32" classroomids="*36" day="3" period="2"/>
+      <card lessonid="*32" classroomids="*36" day="2" period="3"/>
+      <card lessonid="*32" classroomids="*36" day="0" period="4"/>
+      <card lessonid="*32" classroomids="*36" day="4" period="4"/>
+      <card lessonid="*32" classroomids="*36" day="3" period="3"/>
+      <card lessonid="*32" classroomids="*36" day="1" period="4"/>
+      <card lessonid="*32" classroomids="*36" day="1" period="3"/>
+      <card lessonid="*33" classroomids="*36" day="2" period="1"/>
+      <card lessonid="*33" classroomids="*36" day="0" period="1"/>
+      <card lessonid="*33" classroomids="*36" day="3" period="1"/>
+      <card lessonid="*34" classroomids="*36" day="3" period="5"/>
+      <card lessonid="*35" classroomids="*3" day="1" period="4"/>
+      <card lessonid="*35" classroomids="*3" day="2" period="4"/>
+      <card lessonid="*36" classroomids="*3" day="4" period="4"/>
+      <card lessonid="*37" classroomids="*3" day="3" period="2"/>
+      <card lessonid="*38" classroomids="*3" day="4" period="1"/>
+      <card lessonid="*38" classroomids="*3" day="3" period="4"/>
+      <card lessonid="*38" classroomids="*3" day="2" period="2"/>
+      <card lessonid="*38" classroomids="*3" day="3" period="3"/>
+      <card lessonid="*38" classroomids="*3" day="1" period="1"/>
+      <card lessonid="*38" classroomids="*3" day="1" period="2"/>
+      <card lessonid="*38" classroomids="*3" day="0" period="2"/>
+      <card lessonid="*39" classroomids="*3" day="2" period="1"/>
+      <card lessonid="*39" classroomids="*3" day="0" period="1"/>
+      <card lessonid="*39" classroomids="*3" day="3" period="1"/>
+      <card lessonid="*40" classroomids="*3" day="0" period="4"/>
+      <card lessonid="*41" classroomids="*37" day="4" period="3"/>
+      <card lessonid="*41" classroomids="*37" day="2" period="3"/>
+      <card lessonid="*41" classroomids="*37" day="0" period="4"/>
+      <card lessonid="*42" classroomids="*37" day="0" period="1"/>
+      <card lessonid="*43" classroomids="*37" day="2" period="4"/>
+      <card lessonid="*44" classroomids="*37" day="3" period="4"/>
+      <card lessonid="*45" classroomids="*37" day="1" period="1"/>
+      <card lessonid="*45" classroomids="*37" day="3" period="1"/>
+      <card lessonid="*45" classroomids="*37" day="4" period="5"/>
+      <card lessonid="*46" classroomids="*38" day="1" period="3"/>
+      <card lessonid="*46" classroomids="*38" day="4" period="2"/>
+      <card lessonid="*46" classroomids="*38" day="0" period="3"/>
+      <card lessonid="*47" classroomids="*38" day="2" period="1"/>
+      <card lessonid="*48" classroomids="*38" day="4" period="1"/>
+      <card lessonid="*49" classroomids="*38" day="3" period="4"/>
+      <card lessonid="*50" classroomids="*38" day="3" period="1"/>
+      <card lessonid="*50" classroomids="*38" day="1" period="1"/>
+      <card lessonid="*50" classroomids="*38" day="4" period="5"/>
+      <card lessonid="*51" classroomids="*39" day="3" period="4"/>
+      <card lessonid="*51" classroomids="*39" day="1" period="4"/>
+      <card lessonid="*51" classroomids="*39" day="2" period="4"/>
+      <card lessonid="*52" classroomids="*39" day="3" period="5"/>
+      <card lessonid="*53" classroomids="*39" day="2" period="5"/>
+      <card lessonid="*54" classroomids="*39" day="4" period="5"/>
+      <card lessonid="*55" classroomids="*39" day="0" period="1"/>
+      <card lessonid="*55" classroomids="*39" day="3" period="1"/>
+      <card lessonid="*55" classroomids="*39" day="4" period="1"/>
+      <card lessonid="*56" classroomids="*9" day="4" period="4"/>
+      <card lessonid="*56" classroomids="*9" day="1" period="3"/>
+      <card lessonid="*57" classroomids="*5" day="0" period="5"/>
+      <card lessonid="*58" classroomids="*5" day="0" period="4"/>
+      <card lessonid="*59" classroomids="*5" day="1" period="5"/>
+      <card lessonid="*60" classroomids="*5" day="2" period="5"/>
+      <card lessonid="*61" classroomids="*5" day="2" period="4"/>
+      <card lessonid="*62" classroomids="*5" day="2" period="1"/>
+      <card lessonid="*62" classroomids="*5" day="3" period="4"/>
+      <card lessonid="*63" classroomids="*9" day="3" period="3"/>
+      <card lessonid="*63" classroomids="*9" day="1" period="2"/>
+      <card lessonid="*64" classroomids="*7" day="2" period="4"/>
+      <card lessonid="*65" classroomids="*7" day="3" period="1"/>
+      <card lessonid="*66" classroomids="*7" day="2" period="5"/>
+      <card lessonid="*67" classroomids="*7" day="3" period="5"/>
+      <card lessonid="*68" classroomids="*7" day="3" period="4"/>
+      <card lessonid="*69" classroomids="*7" day="3" period="2"/>
+      <card lessonid="*69" classroomids="*7" day="0" period="4"/>
+      <card lessonid="*70" classroomids="*2" day="3" period="5"/>
+      <card lessonid="*70" classroomids="*2" day="1" period="3"/>
+      <card lessonid="*71" classroomids="*2" day="1" period="5"/>
+      <card lessonid="*72" classroomids="*2" day="3" period="2"/>
+      <card lessonid="*73" classroomids="*2" day="4" period="5"/>
+      <card lessonid="*74" classroomids="*2" day="3" period="3"/>
+      <card lessonid="*75" classroomids="*2" day="0" period="4"/>
+      <card lessonid="*76" classroomids="*2" day="0" period="3"/>
+      <card lessonid="*76" classroomids="*2" day="2" period="3"/>
+      <card lessonid="*77" classroomids="*1" day="1" period="4"/>
+      <card lessonid="*77" classroomids="*1" day="3" period="2"/>
+      <card lessonid="*78" classroomids="*1" day="0" period="4"/>
+      <card lessonid="*79" classroomids="*1" day="2" period="4"/>
+      <card lessonid="*80" classroomids="*1" day="3" period="4"/>
+      <card lessonid="*81" classroomids="*1" day="4" period="5"/>
+      <card lessonid="*82" classroomids="*1" day="3" period="3"/>
+      <card lessonid="*83" classroomids="*1" day="1" period="5"/>
+      <card lessonid="*83" classroomids="*1" day="4" period="4"/>
+      <card lessonid="*84" classroomids="*12" day="0" period="1"/>
+      <card lessonid="*84" classroomids="*12" day="3" period="3"/>
+      <card lessonid="*84" classroomids="*12" day="2" period="2"/>
+      <card lessonid="*85" classroomids="*24" day="3" period="4"/>
+      <card lessonid="*85" classroomids="*24" day="2" period="4"/>
+      <card lessonid="*85" classroomids="*24" day="4" period="5"/>
+      <card lessonid="*85" classroomids="*24" day="0" period="3"/>
+      <card lessonid="*86" classroomids="*6" day="1" period="4"/>
+      <card lessonid="*86" classroomids="*6" day="3" period="5"/>
+      <card lessonid="*87" classroomids="*40" day="1" period="1"/>
+      <card lessonid="*87" classroomids="*40" day="0" period="4"/>
+      <card lessonid="*87" classroomids="*40" day="3" period="1"/>
+      <card lessonid="*88" classroomids="*21" day="2" period="5"/>
+      <card lessonid="*89" classroomids="*4" day="1" period="3"/>
+      <card lessonid="*90" classroomids="*15" day="3" period="6"/>
+      <card lessonid="*90" classroomids="*15" day="3" period="5"/>
+      <card lessonid="*91" classroomids="*15" day="4" period="4"/>
+      <card lessonid="*91" classroomids="*15" day="2" period="3"/>
+      <card lessonid="*91" classroomids="*15" day="3" period="1"/>
+      <card lessonid="*92" classroomids="*15" day="1" period="6"/>
+      <card lessonid="*93" classroomids="*21" day="4" period="3"/>
+      <card lessonid="*93" classroomids="" day="3" period="4"/>
+      <card lessonid="*93" classroomids="*21" day="1" period="3"/>
+      <card lessonid="*93" classroomids="*21" day="1" period="1"/>
+      <card lessonid="*94" classroomids="*6" day="3" period="3"/>
+      <card lessonid="*94" classroomids="*6" day="0" period="1"/>
+      <card lessonid="*95" classroomids="*40" day="1" period="2"/>
+      <card lessonid="*95" classroomids="*40" day="3" period="2"/>
+      <card lessonid="*95" classroomids="*40" day="0" period="5"/>
+      <card lessonid="*96" classroomids="*21" day="0" period="2"/>
+      <card lessonid="*97" classroomids="*4" day="0" period="4"/>
+      <card lessonid="*98" classroomids="*18" day="0" period="3"/>
+      <card lessonid="*99" classroomids="*10" day="4" period="3"/>
+      <card lessonid="*99" classroomids="*10" day="0" period="2"/>
+      <card lessonid="*100" classroomids="*10" day="4" period="1"/>
+      <card lessonid="*100" classroomids="*10" day="2" period="2"/>
+      <card lessonid="*100" classroomids="*10" day="0" period="3"/>
+      <card lessonid="*101" classroomids="*10" day="3" period="5"/>
+      <card lessonid="*102" classroomids="*9" day="2" period="1"/>
+      <card lessonid="*102" classroomids="*9" day="4" period="5"/>
+      <card lessonid="*102" classroomids="*9" day="1" period="4"/>
+      <card lessonid="*103" classroomids="*6" day="3" period="2"/>
+      <card lessonid="*103" classroomids="*6" day="1" period="2"/>
+      <card lessonid="*104" classroomids="*21" day="2" period="3"/>
+      <card lessonid="*105" classroomids="*4" day="0" period="5"/>
+      <card lessonid="*106" classroomids="*24" day="0" period="1"/>
+      <card lessonid="*106" classroomids="*24" day="1" period="5"/>
+      <card lessonid="*106" classroomids="*24" day="4" period="2"/>
+      <card lessonid="*106" classroomids="*24" day="3" period="1"/>
+      <card lessonid="*107" classroomids="*40" day="0" period="6"/>
+      <card lessonid="*107" classroomids="*40" day="1" period="6"/>
+      <card lessonid="*107" classroomids="*40" day="4" period="4"/>
+      <card lessonid="*108" classroomids="*18" day="0" period="4"/>
+      <card lessonid="*109" classroomids="*15" day="0" period="6"/>
+      <card lessonid="*109" classroomids="*15" day="2" period="5"/>
+      <card lessonid="*110" classroomids="*12" day="3" period="5"/>
+      <card lessonid="*110" classroomids="*12" day="4" period="1"/>
+      <card lessonid="*110" classroomids="*12" day="1" period="2"/>
+      <card lessonid="*111" classroomids="*12" day="2" period="6"/>
+      <card lessonid="*112" classroomids="*9" day="2" period="3"/>
+      <card lessonid="*112" classroomids="*9" day="4" period="6"/>
+      <card lessonid="*112" classroomids="*9" day="1" period="7"/>
+      <card lessonid="*113" classroomids="*4" day="4" period="3"/>
+      <card lessonid="*113" classroomids="*4" day="0" period="2"/>
+      <card lessonid="*114" classroomids="*20" day="4" period="4"/>
+      <card lessonid="*114" classroomids="*20" day="1" period="3"/>
+      <card lessonid="*115" classroomids="*6" day="4" period="5"/>
+      <card lessonid="*115" classroomids="*6" day="2" period="1"/>
+      <card lessonid="*116" classroomids="*21" day="4" period="2"/>
+      <card lessonid="*117" classroomids="*4" day="1" period="6"/>
+      <card lessonid="*118" classroomids="*22" day="1" period="4"/>
+      <card lessonid="*118" classroomids="*22" day="3" period="1"/>
+      <card lessonid="*118" classroomids="*22" day="0" period="5"/>
+      <card lessonid="*118" classroomids="*22" day="2" period="4"/>
+      <card lessonid="*119" classroomids="*41" day="1" period="1"/>
+      <card lessonid="*119" classroomids="*41" day="0" period="4"/>
+      <card lessonid="*119" classroomids="*41" day="3" period="2"/>
+      <card lessonid="*120" classroomids="*18" day="0" period="1"/>
+      <card lessonid="*121" classroomids="*29" day="2" period="2"/>
+      <card lessonid="*121" classroomids="*29" day="0" period="3"/>
+      <card lessonid="*122" classroomids="*17" day="4" period="1"/>
+      <card lessonid="*122" classroomids="*17" day="2" period="1"/>
+      <card lessonid="*123" classroomids="*17" day="1" period="5"/>
+      <card lessonid="*123" classroomids="*17" day="2" period="2"/>
+      <card lessonid="*123" classroomids="*17" day="4" period="3"/>
+      <card lessonid="*124" classroomids="*17" day="1" period="6"/>
+      <card lessonid="*125" classroomids="*9" day="1" period="1"/>
+      <card lessonid="*125" classroomids="*9" day="3" period="5"/>
+      <card lessonid="*125" classroomids="*9" day="4" period="7"/>
+      <card lessonid="*126" classroomids="*4" day="1" period="2"/>
+      <card lessonid="*126" classroomids="*4" day="4" period="2"/>
+      <card lessonid="*127" classroomids="*20" day="0" period="5"/>
+      <card lessonid="*127" classroomids="*20" day="3" period="2"/>
+      <card lessonid="*128" classroomids="*6" day="3" period="6"/>
+      <card lessonid="*128" classroomids="*6" day="0" period="6"/>
+      <card lessonid="*129" classroomids="*21" day="3" period="3"/>
+      <card lessonid="*130" classroomids="*4" day="0" period="3"/>
+      <card lessonid="*131" classroomids="*41" day="2" period="4"/>
+      <card lessonid="*131" classroomids="*41" day="4" period="4"/>
+      <card lessonid="*131" classroomids="*41" day="1" period="3"/>
+      <card lessonid="*132" classroomids="*18" day="0" period="2"/>
+      <card lessonid="*133" classroomids="*29" day="2" period="3"/>
+      <card lessonid="*133" classroomids="*29" day="0" period="1"/>
+      <card lessonid="*134" classroomids="*15" day="0" period="4"/>
+      <card lessonid="*134" classroomids="*15" day="3" period="3"/>
+      <card lessonid="*135" classroomids="*17" day="1" period="3"/>
+      <card lessonid="*135" classroomids="*17" day="2" period="3"/>
+      <card lessonid="*135" classroomids="*17" day="4" period="2"/>
+      <card lessonid="*136" classroomids="*17" day="1" period="6"/>
+      <card lessonid="*137" classroomids="*9" day="2" period="4"/>
+      <card lessonid="*137" classroomids="*9" day="4" period="3"/>
+      <card lessonid="*137" classroomids="*9" day="3" period="1"/>
+      <card lessonid="*138" classroomids="*4" day="4" period="1"/>
+      <card lessonid="*138" classroomids="*4" day="0" period="1"/>
+      <card lessonid="*139" classroomids="*20" day="1" period="2"/>
+      <card lessonid="*139" classroomids="*20" day="3" period="5"/>
+      <card lessonid="*140" classroomids="*6" day="3" period="4"/>
+      <card lessonid="*140" classroomids="*6" day="0" period="2"/>
+      <card lessonid="*141" classroomids="*21" day="3" period="2"/>
+      <card lessonid="*142" classroomids="*4" day="1" period="4"/>
+      <card lessonid="*143" classroomids="*22" day="0" period="3"/>
+      <card lessonid="*143" classroomids="*22" day="1" period="1"/>
+      <card lessonid="*143" classroomids="*22" day="2" period="2"/>
+      <card lessonid="*143" classroomids="*22" day="4" period="4"/>
+      <card lessonid="*144" classroomids="*18" day="2" period="1"/>
+      <card lessonid="*145" classroomids="*29" day="2" period="5"/>
+      <card lessonid="*145" classroomids="*29" day="0" period="5"/>
+      <card lessonid="*146" classroomids="*10" day="3" period="4"/>
+      <card lessonid="*146" classroomids="*10" day="0" period="5"/>
+      <card lessonid="*147" classroomids="*10" day="1" period="3"/>
+      <card lessonid="*147" classroomids="*10" day="2" period="5"/>
+      <card lessonid="*148" classroomids="*10" day="4" period="4"/>
+      <card lessonid="*149" classroomids="*11" day="1" period="5"/>
+      <card lessonid="*149" classroomids="*11" day="3" period="6"/>
+      <card lessonid="*149" classroomids="*11" day="0" period="1"/>
+      <card lessonid="*150" classroomids="*26" day="2" period="2"/>
+      <card lessonid="*151" classroomids="*26" day="4" period="4"/>
+      <card lessonid="*152" classroomids="*20" day="1" period="4"/>
+      <card lessonid="*152" classroomids="" day="3" period="3"/>
+      <card lessonid="*153" classroomids="*25" day="3" period="5"/>
+      <card lessonid="*153" classroomids="*25" day="1" period="6"/>
+      <card lessonid="*154" classroomids="*6" day="0" period="3"/>
+      <card lessonid="*154" classroomids="*6" day="3" period="1"/>
+      <card lessonid="*155" classroomids="*4" day="1" period="1"/>
+      <card lessonid="*156" classroomids="*41" day="4" period="3"/>
+      <card lessonid="*156" classroomids="*41" day="0" period="7"/>
+      <card lessonid="*156" classroomids="*41" day="2" period="6"/>
+      <card lessonid="*157" classroomids="*18" day="1" period="2"/>
+      <card lessonid="*158" classroomids="*29" day="2" period="4"/>
+      <card lessonid="*158" classroomids="*29" day="0" period="2"/>
+      <card lessonid="*159" classroomids="*10" day="2" period="7"/>
+      <card lessonid="*159" classroomids="*10" day="0" period="6"/>
+      <card lessonid="*160" classroomids="*10" day="1" period="2"/>
+      <card lessonid="*160" classroomids="*10" day="2" period="3"/>
+      <card lessonid="*161" classroomids="*10" day="4" period="2"/>
+      <card lessonid="*162" classroomids="" day="3" period="1"/>
+      <card lessonid="*162" classroomids="*11" day="2" period="5"/>
+      <card lessonid="*162" classroomids="*11" day="0" period="4"/>
+      <card lessonid="*163" classroomids="*26" day="0" period="5"/>
+      <card lessonid="*164" classroomids="*26" day="4" period="2"/>
+      <card lessonid="*165" classroomids="*20" day="3" period="4"/>
+      <card lessonid="*165" classroomids="*20" day="1" period="6"/>
+      <card lessonid="*166" classroomids="*25" day="0" period="2"/>
+      <card lessonid="*166" classroomids="*25" day="2" period="1"/>
+      <card lessonid="*167" classroomids="*6" day="4" period="4"/>
+      <card lessonid="*167" classroomids="*6" day="2" period="2"/>
+      <card lessonid="*168" classroomids="*21" day="0" period="3"/>
+      <card lessonid="*169" classroomids="*4" day="1" period="7"/>
+      <card lessonid="*170" classroomids="*18" day="1" period="1"/>
+      <card lessonid="*171" classroomids="*29" day="1" period="4"/>
+      <card lessonid="*171" classroomids="*29" day="3" period="5"/>
+      <card lessonid="*172" classroomids="*15" day="3" period="4"/>
+      <card lessonid="*172" classroomids="*15" day="0" period="1"/>
+      <card lessonid="*173" classroomids="*11" day="0" period="5"/>
+      <card lessonid="*173" classroomids="*11" day="2" period="2"/>
+      <card lessonid="*174" classroomids="*26" day="0" period="3"/>
+      <card lessonid="*174" classroomids="*26" day="2" period="6"/>
+      <card lessonid="*175" classroomids="*20" day="0" period="2"/>
+      <card lessonid="*175" classroomids="*20" day="3" period="3"/>
+      <card lessonid="*176" classroomids="*25" day="0" period="6"/>
+      <card lessonid="*176" classroomids="*25" day="3" period="6"/>
+      <card lessonid="*177" classroomids="*13" day="1" period="2"/>
+      <card lessonid="*177" classroomids="*13" day="4" period="6"/>
+      <card lessonid="*178" classroomids="*21" day="4" period="1"/>
+      <card lessonid="*179" classroomids="*12" day="4" period="4"/>
+      <card lessonid="*179" classroomids="*12" day="2" period="1"/>
+      <card lessonid="*180" classroomids="*4" day="1" period="5"/>
+      <card lessonid="*181" classroomids="*40" day="4" period="7"/>
+      <card lessonid="*181" classroomids="*40" day="1" period="4"/>
+      <card lessonid="*181" classroomids="*40" day="2" period="4"/>
+      <card lessonid="*182" classroomids="*29" day="0" period="4"/>
+      <card lessonid="*182" classroomids="*29" day="3" period="1"/>
+      <card lessonid="*183" classroomids="*15" day="1" period="5"/>
+      <card lessonid="*183" classroomids="*15" day="3" period="2"/>
+      <card lessonid="*184" classroomids="*11" day="2" period="6"/>
+      <card lessonid="*184" classroomids="*11" day="0" period="2"/>
+      <card lessonid="*185" classroomids="*26" day="2" period="4"/>
+      <card lessonid="*185" classroomids="*26" day="4" period="3"/>
+      <card lessonid="*186" classroomids="*25" day="0" period="1"/>
+      <card lessonid="*186" classroomids="*25" day="2" period="2"/>
+      <card lessonid="*187" classroomids="*13" day="1" period="6"/>
+      <card lessonid="*187" classroomids="*13" day="4" period="4"/>
+      <card lessonid="*188" classroomids="*21" day="1" period="4"/>
+      <card lessonid="*189" classroomids="*12" day="0" period="6"/>
+      <card lessonid="*189" classroomids="*12" day="2" period="5"/>
+      <card lessonid="*190" classroomids="*4" day="3" period="3"/>
+      <card lessonid="*191" classroomids="*40" day="1" period="7"/>
+      <card lessonid="*191" classroomids="*40" day="4" period="6"/>
+      <card lessonid="*191" classroomids="*40" day="0" period="7"/>
+      <card lessonid="*192" classroomids="*29" day="3" period="4"/>
+      <card lessonid="*192" classroomids="*29" day="1" period="1"/>
+      <card lessonid="*193" classroomids="*10" day="3" period="7"/>
+      <card lessonid="*193" classroomids="*10" day="0" period="7"/>
+      <card lessonid="*194" classroomids="*14" day="1" period="7"/>
+      <card lessonid="*195" classroomids="*26" day="0" period="1"/>
+      <card lessonid="*195" classroomids="*26" day="3" period="2"/>
+      <card lessonid="*196" classroomids="*20" day="2" period="2"/>
+      <card lessonid="*196" classroomids="*20" day="4" period="7"/>
+      <card lessonid="*197" classroomids="*25" day="2" period="4"/>
+      <card lessonid="*197" classroomids="*25" day="0" period="3"/>
+      <card lessonid="*197" classroomids="*25" day="4" period="5"/>
+      <card lessonid="*198" classroomids="*21" day="2" period="6"/>
+      <card lessonid="*199" classroomids="*11" day="0" period="6"/>
+      <card lessonid="*199" classroomids="*11" day="2" period="3"/>
+      <card lessonid="*200" classroomids="*10" day="1" period="1"/>
+      <card lessonid="*200" classroomids="*10" day="3" period="6"/>
+      <card lessonid="*201" classroomids="*4" day="3" period="5"/>
+      <card lessonid="*202" classroomids="*29" day="3" period="3"/>
+      <card lessonid="*203" classroomids="*29" day="1" period="3"/>
+      <card lessonid="*204" classroomids="*10" day="2" period="1"/>
+      <card lessonid="*204" classroomids="*10" day="0" period="4"/>
+      <card lessonid="*205" classroomids="*14" day="4" period="7"/>
+      <card lessonid="*206" classroomids="*26" day="0" period="2"/>
+      <card lessonid="*206" classroomids="*26" day="3" period="7"/>
+      <card lessonid="*207" classroomids="*20" day="4" period="2"/>
+      <card lessonid="*207" classroomids="*20" day="2" period="4"/>
+      <card lessonid="*208" classroomids="*25" day="4" period="6"/>
+      <card lessonid="*208" classroomids="*25" day="2" period="3"/>
+      <card lessonid="*208" classroomids="*25" day="0" period="5"/>
+      <card lessonid="*209" classroomids="*21" day="0" period="7"/>
+      <card lessonid="*210" classroomids="*11" day="2" period="7"/>
+      <card lessonid="*210" classroomids="*11" day="0" period="3"/>
+      <card lessonid="*211" classroomids="*10" day="3" period="3"/>
+      <card lessonid="*211" classroomids="*10" day="0" period="1"/>
+      <card lessonid="*211" classroomids="*10" day="1" period="4"/>
+      <card lessonid="*211" classroomids="*10" day="2" period="6"/>
+      <card lessonid="*212" classroomids="*4" day="3" period="4"/>
+      <card lessonid="*213" classroomids="*29" day="3" period="2"/>
+      <card lessonid="*214" classroomids="*29" day="1" period="3"/>
+      <card lessonid="*215" classroomids="*13" day="4" period="5"/>
+      <card lessonid="*215" classroomids="*13" day="1" period="1"/>
+      <card lessonid="*216" classroomids="*31" day="1" period="3"/>
+      <card lessonid="*216" classroomids="*31" day="3" period="5"/>
+      <card lessonid="*217" classroomids="*31" day="1" period="4"/>
+      <card lessonid="*218" classroomids="*31" day="1" period="6"/>
+      <card lessonid="*218" classroomids="*31" day="3" period="2"/>
+      <card lessonid="*218" classroomids="*31" day="2" period="5"/>
+      <card lessonid="*218" classroomids="*31" day="2" period="6"/>
+      <card lessonid="*219" classroomids="*31" day="2" period="3"/>
+      <card lessonid="*220" classroomids="*4" day="2" period="3"/>
+      <card lessonid="*220" classroomids="*4" day="2" period="5"/>
+      <card lessonid="*221" classroomids="*32" day="1" period="2"/>
+      <card lessonid="*221" classroomids="*32" day="1" period="3"/>
+      <card lessonid="*221" classroomids="*32" day="3" period="2"/>
+      <card lessonid="*221" classroomids="*32" day="2" period="2"/>
+      <card lessonid="*221" classroomids="*32" day="3" period="3"/>
+      <card lessonid="*222" classroomids="*34" day="0" period="7"/>
+      <card lessonid="*222" classroomids="*34" day="0" period="5"/>
+      <card lessonid="*222" classroomids="*34" day="0" period="6"/>
+      <card lessonid="*222" classroomids="*34" day="1" period="2"/>
+      <card lessonid="*222" classroomids="*34" day="2" period="5"/>
+      <card lessonid="*222" classroomids="*34" day="2" period="7"/>
+      <card lessonid="*222" classroomids="*34" day="2" period="6"/>
+      <card lessonid="*223" classroomids="*34" day="2" period="4"/>
+      <card lessonid="*224" classroomids="*34" day="0" period="4"/>
+      <card lessonid="*224" classroomids="*34" day="1" period="3"/>
+      <card lessonid="*225" classroomids="*12" day="3" period="2"/>
+      <card lessonid="*225" classroomids="*12" day="0" period="2"/>
+      <card lessonid="*226" classroomids="*18" day="0" period="5"/>
+      <card lessonid="*227" classroomids="*40" day="2" period="7"/>
+      <card lessonid="*227" classroomids="*40" day="4" period="5"/>
+      <card lessonid="*227" classroomids="*40" day="1" period="5"/>
+      <card lessonid="*228" classroomids="*40" day="4" period="3"/>
+      <card lessonid="*228" classroomids="*40" day="2" period="6"/>
+      <card lessonid="*228" classroomids="*40" day="1" period="3"/>
+      <card lessonid="*229" classroomids="*41" day="3" period="1"/>
+      <card lessonid="*229" classroomids="*41" day="1" period="2"/>
+      <card lessonid="*229" classroomids="*41" day="0" period="5"/>
+      <card lessonid="*230" classroomids="*41" day="4" period="8"/>
+      <card lessonid="*230" classroomids="*41" day="1" period="6"/>
+      <card lessonid="*230" classroomids="*41" day="0" period="8"/>
+      <card lessonid="*231" classroomids="*16,*20" day="3" period="8"/>
+      <card lessonid="*232" classroomids="*16,*20" day="0" period="1"/>
+      <card lessonid="*233" classroomids="*16,*20" day="0" period="4"/>
+      <card lessonid="*234" classroomids="*16,*20" day="3" period="6"/>
+      <card lessonid="*235" classroomids="*16,*20" day="0" period="3"/>
+      <card lessonid="*236" classroomids="*19,*27" day="1" period="4"/>
+      <card lessonid="*237" classroomids="*19,*27" day="3" period="6"/>
+      <card lessonid="*238" classroomids="*19,*28" day="0" period="2"/>
+      <card lessonid="*239" classroomids="*28,*19" day="2" period="2"/>
+      <card lessonid="*240" classroomids="*19,*28" day="2" period="3"/>
+      <card lessonid="*241" classroomids="*19,*28" day="3" period="2"/>
+      <card lessonid="*242" classroomids="*19,*28" day="1" period="1"/>
+      <card lessonid="*243" classroomids="*19,*28" day="4" period="3"/>
+      <card lessonid="*244" classroomids="*19,*28" day="1" period="3"/>
+      <card lessonid="*245" classroomids="*19,*28" day="1" period="2"/>
+      <card lessonid="*246" classroomids="*19,*27" day="4" period="1"/>
+      <card lessonid="*247" classroomids="*27,*28" day="3" period="3"/>
+      <card lessonid="*248" classroomids="*28,*27" day="1" period="5"/>
+      <card lessonid="*249" classroomids="*28,*27" day="3" period="1"/>
+      <card lessonid="*250" classroomids="*28,*27" day="2" period="6"/>
+      <card lessonid="*251" classroomids="*19,*27" day="4" period="2"/>
+      <card lessonid="*252" classroomids="*19,*27" day="2" period="4"/>
+      <card lessonid="*253" classroomids="*19,*27" day="0" period="7"/>
+      <card lessonid="*253" classroomids="*19,*27" day="2" period="5"/>
+      <card lessonid="*254" classroomids="*19,*27" day="2" period="1"/>
+      <card lessonid="*254" classroomids="*19,*27" day="0" period="3"/>
+      <card lessonid="*255" classroomids="*19,*27" day="0" period="4"/>
+      <card lessonid="*255" classroomids="*19,*27" day="2" period="7"/>
+      <card lessonid="*256" classroomids="*19,*27" day="3" period="5"/>
+      <card lessonid="*256" classroomids="*19,*27" day="0" period="6"/>
+      <card lessonid="*257" classroomids="*6" day="0" period="5"/>
+      <card lessonid="*258" classroomids="*6" day="2" period="4"/>
+      <card lessonid="*259" classroomids="*13" day="4" period="1"/>
+      <card lessonid="*259" classroomids="*13" day="1" period="4"/>
+      <card lessonid="*260" classroomids="" day="1" period="2"/>
+      <card lessonid="*260" classroomids="" day="0" period="2"/>
+      <card lessonid="*260" classroomids="" day="4" period="2"/>
+      <card lessonid="*260" classroomids="" day="2" period="2"/>
+      <card lessonid="*261" classroomids="" day="1" period="1"/>
+      <card lessonid="*261" classroomids="" day="2" period="2"/>
+      <card lessonid="*261" classroomids="" day="0" period="3"/>
+      <card lessonid="*261" classroomids="" day="4" period="2"/>
+      <card lessonid="*262" classroomids="" day="4" period="3"/>
+      <card lessonid="*263" classroomids="" day="0" period="3"/>
+      <card lessonid="*263" classroomids="" day="1" period="3"/>
+      <card lessonid="*263" classroomids="" day="4" period="3"/>
+      <card lessonid="*263" classroomids="" day="2" period="3"/>
+      <card lessonid="*264" classroomids="" day="4" period="2"/>
+      <card lessonid="*264" classroomids="" day="2" period="2"/>
+      <card lessonid="*264" classroomids="" day="0" period="3"/>
+      <card lessonid="*264" classroomids="" day="1" period="2"/>
+      <card lessonid="*265" classroomids="" day="0" period="2"/>
+      <card lessonid="*265" classroomids="" day="4" period="3"/>
+      <card lessonid="*265" classroomids="" day="2" period="3"/>
+      <card lessonid="*265" classroomids="" day="1" period="2"/>
+      <card lessonid="*266" classroomids="" day="1" period="2"/>
+      <card lessonid="*266" classroomids="" day="4" period="2"/>
+      <card lessonid="*266" classroomids="" day="2" period="2"/>
+      <card lessonid="*266" classroomids="" day="0" period="2"/>
+      <card lessonid="*267" classroomids="" day="1" period="2"/>
+      <card lessonid="*267" classroomids="" day="4" period="2"/>
+      <card lessonid="*267" classroomids="" day="2" period="2"/>
+      <card lessonid="*267" classroomids="" day="0" period="2"/>
+      <card lessonid="*268" classroomids="" day="0" period="2"/>
+      <card lessonid="*268" classroomids="" day="4" period="2"/>
+      <card lessonid="*268" classroomids="" day="1" period="3"/>
+      <card lessonid="*268" classroomids="" day="2" period="2"/>
+      <card lessonid="*269" classroomids="" day="4" period="2"/>
+      <card lessonid="*269" classroomids="" day="1" period="2"/>
+      <card lessonid="*269" classroomids="" day="2" period="2"/>
+      <card lessonid="*269" classroomids="" day="0" period="2"/>
+      <card lessonid="*270" classroomids="" day="0" period="2"/>
+      <card lessonid="*270" classroomids="" day="4" period="2"/>
+      <card lessonid="*270" classroomids="" day="2" period="2"/>
+      <card lessonid="*270" classroomids="" day="1" period="2"/>
+      <card lessonid="*271" classroomids="*27" day="3" period="2"/>
+      <card lessonid="*272" classroomids="*27" day="0" period="1"/>
+      <card lessonid="*273" classroomids="*29" day="4" period="5"/>
+      <card lessonid="*274" classroomids="*16,*20" day="3" period="6"/>
+      <card lessonid="*275" classroomids="*32" day="2" period="6"/>
+      <card lessonid="*275" classroomids="*32" day="3" period="5"/>
+      <card lessonid="*275" classroomids="*32" day="1" period="6"/>
+      <card lessonid="*275" classroomids="*32" day="1" period="4"/>
+      <card lessonid="*275" classroomids="*32" day="3" period="4"/>
+      <card lessonid="*275" classroomids="*32" day="1" period="5"/>
+      <card lessonid="*275" classroomids="*32" day="2" period="4"/>
+      <card lessonid="*276" classroomids="*31" day="1" period="7"/>
+      <card lessonid="*276" classroomids="*31" day="2" period="4"/>
+      <card lessonid="*276" classroomids="*31" day="2" period="2"/>
+      <card lessonid="*276" classroomids="*31" day="1" period="5"/>
+      <card lessonid="*276" classroomids="*31" day="3" period="4"/>
+      <card lessonid="*276" classroomids="*31" day="3" period="3"/>
+      <card lessonid="*277" classroomids="*41" day="4" period="7"/>
+      <card lessonid="*277" classroomids="*41" day="1" period="4"/>
+      <card lessonid="*277" classroomids="*41" day="2" period="7"/>
+      <card lessonid="*278" classroomids="*41" day="4" period="5"/>
+      <card lessonid="*278" classroomids="*41" day="0" period="6"/>
+      <card lessonid="*278" classroomids="*41" day="1" period="8"/>
+      <card lessonid="*279" classroomids="*41" day="0" period="3"/>
+      <card lessonid="*279" classroomids="*40" day="2" period="1"/>
+      <card lessonid="*279" classroomids="*40" day="3" period="5"/>
+      <card lessonid="*280" classroomids="" day="0" period="5"/>
+      <card lessonid="*280" classroomids="" day="2" period="4"/>
+      <card lessonid="*280" classroomids="*40" day="3" period="4"/>
+      <card lessonid="*281" classroomids="*40" day="0" period="3"/>
+      <card lessonid="*281" classroomids="*42" day="1" period="5"/>
+      <card lessonid="*281" classroomids="*42" day="4" period="3"/>
+      <card lessonid="*282" classroomids="*40" day="2" period="3"/>
+      <card lessonid="*282" classroomids="*42" day="0" period="1"/>
+      <card lessonid="*282" classroomids="" day="4" period="5"/>
+      <card lessonid="*283" classroomids="" day="0" period="5"/>
+      <card lessonid="*283" classroomids="*42" day="4" period="4"/>
+      <card lessonid="*283" classroomids="*42" day="3" period="2"/>
+      <card lessonid="*284" classroomids="*42" day="0" period="5"/>
+      <card lessonid="*284" classroomids="" day="2" period="4"/>
+      <card lessonid="*284" classroomids="*42" day="3" period="5"/>
+      <card lessonid="*285" classroomids="*41" day="3" period="5"/>
+      <card lessonid="*285" classroomids="*40" day="4" period="1"/>
+      <card lessonid="*285" classroomids="*41" day="1" period="5"/>
+      <card lessonid="*286" classroomids="*42" day="2" period="5"/>
+      <card lessonid="*286" classroomids="*42" day="4" period="2"/>
+      <card lessonid="*286" classroomids="" day="1" period="5"/>
+      <card lessonid="*287" classroomids="*41" day="0" period="2"/>
+      <card lessonid="*287" classroomids="*42" day="2" period="4"/>
+      <card lessonid="*287" classroomids="*41" day="3" period="4"/>
+      <card lessonid="*288" classroomids="*40" day="3" period="3"/>
+      <card lessonid="*288" classroomids="" day="4" period="4"/>
+      <card lessonid="*288" classroomids="" day="0" period="5"/>
+      <card lessonid="*289" classroomids="*20" day="1" period="1"/>
+      <card lessonid="*289" classroomids="*18" day="3" period="4"/>
+      <card lessonid="*290" classroomids="*20" day="4" period="5"/>
+      <card lessonid="*290" classroomids="*20" day="2" period="1"/>
+      <card lessonid="*291" classroomids="*20" day="4" period="1"/>
+      <card lessonid="*291" classroomids="*18" day="2" period="3"/>
+      <card lessonid="*292" classroomids="*21" day="2" period="1"/>
+      <card lessonid="*293" classroomids="*20" day="1" period="5"/>
+      <card lessonid="*293" classroomids="*26" day="3" period="1"/>
+      <card lessonid="*294" classroomids="*26" day="4" period="5"/>
+      <card lessonid="*294" classroomids="*20" day="2" period="3"/>
+      <card lessonid="*295" classroomids="*26" day="3" period="6"/>
+      <card lessonid="*296" classroomids="" day="3" period="3"/>
+      <card lessonid="*296" classroomids="*9" day="0" period="7"/>
+      <card lessonid="*297" classroomids="*11" day="3" period="1"/>
+      <card lessonid="*297" classroomids="*11" day="4" period="6"/>
+      <card lessonid="*297" classroomids="*11" day="1" period="6"/>
+      <card lessonid="*298" classroomids="*4" day="2" period="1"/>
+      <card lessonid="*298" classroomids="*29" day="4" period="4"/>
+      <card lessonid="*298" classroomids="*29" day="1" period="6"/>
+      <card lessonid="*299" classroomids="*9" day="4" period="2"/>
+      <card lessonid="*299" classroomids="*9" day="2" period="2"/>
+      <card lessonid="*299" classroomids="*9" day="1" period="5"/>
+      <card lessonid="*300" classroomids="*25" day="2" period="5"/>
+      <card lessonid="*300" classroomids="*25" day="3" period="4"/>
+      <card lessonid="*300" classroomids="*25" day="0" period="4"/>
+      <card lessonid="*300" classroomids="*25" day="1" period="4"/>
+      <card lessonid="*301" classroomids="*29" day="4" period="6"/>
+      <card lessonid="*301" classroomids="*29" day="2" period="6"/>
+      <card lessonid="*302" classroomids="*8,*23" day="2" period="2"/>
+      <card lessonid="*303" classroomids="*8,*23" day="2" period="6"/>
+      <card lessonid="*304" classroomids="*8,*23" day="2" period="7"/>
+      <card lessonid="*305" classroomids="*8,*23" day="2" period="4"/>
+      <card lessonid="*306" classroomids="*8,*23" day="4" period="2"/>
+      <card lessonid="*307" classroomids="*8,*23" day="4" period="5"/>
+      <card lessonid="*308" classroomids="*8,*23" day="3" period="6"/>
+      <card lessonid="*309" classroomids="*8,*23" day="3" period="3"/>
+      <card lessonid="*310" classroomids="*8,*23" day="4" period="1"/>
+      <card lessonid="*311" classroomids="*8,*23" day="2" period="3"/>
+      <card lessonid="*312" classroomids="*8,*23" day="3" period="5"/>
+      <card lessonid="*313" classroomids="*8,*23" day="3" period="2"/>
+      <card lessonid="*314" classroomids="*8,*23" day="3" period="1"/>
+      <card lessonid="*315" classroomids="*8,*23" day="4" period="4"/>
+      <card lessonid="*316" classroomids="*29,*6,*13" day="4" period="3"/>
+      <card lessonid="*316" classroomids="*29,*6,*13" day="1" period="5"/>
+      <card lessonid="*317" classroomids="*12" day="1" period="4"/>
+      <card lessonid="*318" classroomids="*12" day="1" period="3"/>
+      <card lessonid="*319" classroomids="*12" day="1" period="5"/>
+      <card lessonid="*320" classroomids="*4" day="4" period="5"/>
+      <card lessonid="*321" classroomids="*11,*6,*13" day="1" period="3"/>
+      <card lessonid="*321" classroomids="*29,*6,*13" day="4" period="2"/>
+      <card lessonid="*322" classroomids="" day="1" period="6"/>
+      <card lessonid="*322" classroomids="" day="1" period="7"/>
+      <card lessonid="*322" classroomids="" day="3" period="6"/>
+      <card lessonid="*322" classroomids="" day="3" period="7"/>
+      <card lessonid="*322" classroomids="" day="4" period="6"/>
+      <card lessonid="*322" classroomids="" day="4" period="7"/>
+      <card lessonid="*323" classroomids="" day="0" period="7"/>
+      <card lessonid="*323" classroomids="" day="2" period="6"/>
+      <card lessonid="*323" classroomids="" day="0" period="6"/>
+      <card lessonid="*323" classroomids="" day="2" period="7"/>
+      <card lessonid="*323" classroomids="" day="3" period="8"/>
+      <card lessonid="*323" classroomids="" day="2" period="8"/>
+      <card lessonid="*324" classroomids="" day="0" period="8"/>
+      <card lessonid="*325" classroomids="" day="4" period="5"/>
+      <card lessonid="*326" classroomids="" day="4" period="8"/>
+      <card lessonid="*327" classroomids="" day="1" period="5"/>
+      <card lessonid="*327" classroomids="" day="1" period="3"/>
+      <card lessonid="*327" classroomids="" day="1" period="6"/>
+      <card lessonid="*328" classroomids="" day="0" period="8"/>
+      <card lessonid="*328" classroomids="" day="0" period="7"/>
+      <card lessonid="*328" classroomids="" day="0" period="6"/>
+      <card lessonid="*328" classroomids="" day="0" period="2"/>
+      <card lessonid="*328" classroomids="" day="0" period="1"/>
+      <card lessonid="*328" classroomids="" day="1" period="2"/>
+      <card lessonid="*329" classroomids="*37" day="2" period="1"/>
+      <card lessonid="*329" classroomids="*37" day="1" period="3"/>
+      <card lessonid="*329" classroomids="*37" day="3" period="2"/>
+      <card lessonid="*330" classroomids="" day="0" period="5"/>
+      <card lessonid="*330" classroomids="" day="1" period="4"/>
+      <card lessonid="*330" classroomids="" day="3" period="3"/>
+      <card lessonid="*330" classroomids="" day="4" period="4"/>
+      <card lessonid="*331" classroomids="*38" day="3" period="2"/>
+      <card lessonid="*331" classroomids="*38" day="1" period="4"/>
+      <card lessonid="*331" classroomids="*38" day="0" period="4"/>
+      <card lessonid="*332" classroomids="" day="0" period="1"/>
+      <card lessonid="*332" classroomids="" day="1" period="5"/>
+      <card lessonid="*332" classroomids="" day="3" period="3"/>
+      <card lessonid="*332" classroomids="" day="4" period="4"/>
+      <card lessonid="*333" classroomids="*39" day="0" period="3"/>
+      <card lessonid="*333" classroomids="*39" day="3" period="3"/>
+      <card lessonid="*333" classroomids="*39" day="4" period="3"/>
+      <card lessonid="*334" classroomids="" day="0" period="4"/>
+      <card lessonid="*334" classroomids="" day="1" period="1"/>
+      <card lessonid="*334" classroomids="" day="1" period="3"/>
+      <card lessonid="*334" classroomids="" day="2" period="1"/>
+      <card lessonid="*335" classroomids="*5" day="4" period="1"/>
+      <card lessonid="*335" classroomids="*5" day="3" period="1"/>
+      <card lessonid="*335" classroomids="*5" day="1" period="1"/>
+      <card lessonid="*336" classroomids="*5" day="1" period="4"/>
+      <card lessonid="*336" classroomids="*5" day="0" period="3"/>
+      <card lessonid="*336" classroomids="*5" day="3" period="3"/>
+      <card lessonid="*336" classroomids="*5" day="4" period="3"/>
+      <card lessonid="*337" classroomids="*7" day="2" period="1"/>
+      <card lessonid="*337" classroomids="*7" day="0" period="5"/>
+      <card lessonid="*337" classroomids="*7" day="4" period="4"/>
+      <card lessonid="*338" classroomids="*7" day="1" period="4"/>
+      <card lessonid="*338" classroomids="*7" day="0" period="1"/>
+      <card lessonid="*338" classroomids="*7" day="4" period="1"/>
+      <card lessonid="*338" classroomids="*7" day="2" period="3"/>
+      <card lessonid="*339" classroomids="*2" day="4" period="4"/>
+      <card lessonid="*339" classroomids="*2" day="0" period="1"/>
+      <card lessonid="*339" classroomids="*2" day="1" period="1"/>
+      <card lessonid="*340" classroomids="*2" day="2" period="1"/>
+      <card lessonid="*340" classroomids="*2" day="1" period="4"/>
+      <card lessonid="*340" classroomids="*2" day="3" period="1"/>
+      <card lessonid="*340" classroomids="*2" day="4" period="1"/>
+      <card lessonid="*341" classroomids="*1" day="0" period="5"/>
+      <card lessonid="*341" classroomids="*1" day="3" period="1"/>
+      <card lessonid="*341" classroomids="*1" day="1" period="1"/>
+      <card lessonid="*342" classroomids="*1" day="0" period="1"/>
+      <card lessonid="*342" classroomids="*1" day="2" period="3"/>
+      <card lessonid="*342" classroomids="*1" day="4" period="3"/>
+      <card lessonid="*342" classroomids="*1" day="4" period="1"/>
+      <card lessonid="*343" classroomids="" day="2" period="2"/>
+      <card lessonid="*343" classroomids="" day="0" period="2"/>
+      <card lessonid="*343" classroomids="" day="2" period="1"/>
+      <card lessonid="*344" classroomids="" day="0" period="1"/>
+      <card lessonid="*344" classroomids="" day="1" period="2"/>
+      <card lessonid="*344" classroomids="" day="1" period="1"/>
+      <card lessonid="*345" classroomids="" day="0" period="1"/>
+      <card lessonid="*345" classroomids="" day="3" period="2"/>
+      <card lessonid="*346" classroomids="" day="3" period="5"/>
+      <card lessonid="*346" classroomids="" day="2" period="1"/>
+      <card lessonid="*346" classroomids="" day="0" period="6"/>
+      <card lessonid="*346" classroomids="" day="2" period="5"/>
+      <card lessonid="*346" classroomids="" day="0" period="2"/>
+      <card lessonid="*346" classroomids="" day="3" period="4"/>
+      <card lessonid="*347" classroomids="*22" day="1" period="6"/>
+      <card lessonid="*347" classroomids="*22" day="4" period="2"/>
+      <card lessonid="*347" classroomids="*22" day="4" period="6"/>
+      <card lessonid="*348" classroomids="" day="2" period="3"/>
+      <card lessonid="*348" classroomids="" day="4" period="5"/>
+      <card lessonid="*349" classroomids="" day="1" period="5"/>
+      <card lessonid="*349" classroomids="" day="3" period="3"/>
+      <card lessonid="*350" classroomids="" day="4" period="1"/>
+      <card lessonid="*350" classroomids="" day="1" period="2"/>
+      <card lessonid="*351" classroomids="" day="0" period="4"/>
+      <card lessonid="*351" classroomids="" day="3" period="6"/>
+      <card lessonid="*352" classroomids="" day="1" period="3"/>
+      <card lessonid="*352" classroomids="" day="2" period="6"/>
+      <card lessonid="*353" classroomids="" day="4" period="1"/>
+      <card lessonid="*353" classroomids="" day="2" period="1"/>
+      <card lessonid="*354" classroomids="" day="0" period="4"/>
+      <card lessonid="*354" classroomids="" day="3" period="2"/>
+      <card lessonid="*355" classroomids="" day="4" period="3"/>
+      <card lessonid="*355" classroomids="" day="2" period="3"/>
+      <card lessonid="*356" classroomids="" day="1" period="1"/>
+      <card lessonid="*356" classroomids="" day="3" period="5"/>
+      <card lessonid="*357" classroomids="" day="2" period="2"/>
+      <card lessonid="*357" classroomids="" day="4" period="4"/>
+      <card lessonid="*358" classroomids="" day="1" period="2"/>
+      <card lessonid="*358" classroomids="" day="3" period="6"/>
+      <card lessonid="*359" classroomids="" day="2" period="5"/>
+      <card lessonid="*359" classroomids="" day="0" period="2"/>
+      <card lessonid="*360" classroomids="" day="1" period="6"/>
+      <card lessonid="*360" classroomids="" day="4" period="6"/>
+      <card lessonid="*361" classroomids="" day="0" period="1"/>
+      <card lessonid="*361" classroomids="" day="3" period="3"/>
+      <card lessonid="*362" classroomids="" day="1" period="5"/>
+      <card lessonid="*362" classroomids="" day="4" period="5"/>
+      <card lessonid="*363" classroomids="" day="1" period="4"/>
+      <card lessonid="*363" classroomids="" day="3" period="5"/>
+      <card lessonid="*363" classroomids="" day="4" period="3"/>
+      <card lessonid="*364" classroomids="" day="0" period="3"/>
+      <card lessonid="*364" classroomids="" day="2" period="3"/>
+      <card lessonid="*364" classroomids="" day="3" period="7"/>
+      <card lessonid="*365" classroomids="" day="1" period="3"/>
+      <card lessonid="*366" classroomids="" day="1" period="3"/>
+      <card lessonid="*367" classroomids="" day="2" period="7"/>
+      <card lessonid="*368" classroomids="" day="2" period="7"/>
+      <card lessonid="*369" classroomids="" day="3" period="2"/>
+      <card lessonid="*370" classroomids="" day="4" period="6"/>
+      <card lessonid="*371" classroomids="" day="0" period="6"/>
+      <card lessonid="*372" classroomids="" day="0" period="7"/>
+      <card lessonid="*373" classroomids="" day="2" period="4"/>
+      <card lessonid="*374" classroomids="" day="0" period="4"/>
+      <card lessonid="*375" classroomids="" day="3" period="6"/>
+      <card lessonid="*376" classroomids="" day="4" period="5"/>
+      <card lessonid="*377" classroomids="" day="1" period="6"/>
+      <card lessonid="*378" classroomids="" day="3" period="1"/>
+      <card lessonid="*379" classroomids="" day="0" period="5"/>
+      <card lessonid="*380" classroomids="" day="4" period="1"/>
+      <card lessonid="*381" classroomids="" day="3" period="4"/>
+      <card lessonid="*382" classroomids="" day="4" period="2"/>
+      <card lessonid="*383" classroomids="" day="2" period="5"/>
+      <card lessonid="*384" classroomids="" day="4" period="5"/>
+      <card lessonid="*385" classroomids="*27,*19" day="1" period="7"/>
+      <card lessonid="*385" classroomids="*27,*19" day="4" period="4"/>
+      <card lessonid="*386" classroomids="*27" day="0" period="5"/>
+      <card lessonid="*386" classroomids="*27" day="3" period="4"/>
+      <card lessonid="*387" classroomids="*12" day="3" period="6"/>
+   </cards>
+</timetable>
