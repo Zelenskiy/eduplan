@@ -21,6 +21,13 @@ $config = array(
     'timetable_group'  =>  'timetable_group',
     'timetable_lesson'  =>  'timetable_lesson',
     'timetable_lesson_classes'  =>  'timetable_lesson_classes',
+    'timetable_lesson_teachers'  =>  'timetable_lesson_teachers',
+    'timetable_lesson_subjects'  =>  'timetable_lesson_subjects',
+    'timetable_lesson_classrooms'  =>  'timetable_lesson_classrooms',
+    'timetable_lesson_groups'  =>  'timetable_lesson_groups',
+    'timetable_card'  =>  'timetable_card',
+    'timetable_teacher_cards'  =>  'timetable_teacher_cards',
+    'timetable_card_classrooms'  =>  'timetable_card_classrooms',
 
 );
 
