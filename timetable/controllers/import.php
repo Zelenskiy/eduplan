@@ -4,20 +4,16 @@ require_once('../../include/config.php');
 $uploaddir = '../tmp/';
 $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 
-//echo '<pre>';
+
 if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
 //    echo "Файл корректен и был успешно загружен.\n";
 } else {
 //    echo "Возможная атака с помощью файловой загрузки!\n";
 }
 
-//echo 'Некоторая отладочная информация:';
-//print_r($_FILES);
 
-//print "</pre>";
 
-//print_r($_FILES['userfile']);
-//echo $uploadfile;
+
 $fp = fopen($uploadfile, 'rt'); // Текстовый режим
 //
 //
@@ -26,12 +22,8 @@ $text = file_get_contents($uploadfile);
 $xmlstr = mb_convert_encoding($text, 'utf-8', 'cp1251');
 
 
-//echo $xmlstr;
-
 $xml = new SimpleXMLElement($xmlstr);
-?>
-    <pre>
-<?php
+
 
 $timetable_id = 1;
 
@@ -39,7 +31,6 @@ $timetable_id = 1;
 $sql = 'DELETE FROM '.$config['timetable_day'].' WHERE True; ';
 $result = mysqli_query($connection, $sql);
 foreach ($xml->days[0] as $element) {
-//    echo $element['name'] . "<br>";
     $day = $element['day'];
     $name = $element['name'];
     $short = $element['short'];
@@ -82,7 +73,6 @@ while ($r1 = mysqli_fetch_assoc($result)){
     $teach_id[++$num] = $id;
 
 }
-//print_r($teach_id);
 
 $sql = 'DELETE FROM '.$config['timetable_class'].' WHERE True; ';
 $result = mysqli_query($connection, $sql);
@@ -104,7 +94,6 @@ while ($r1 = mysqli_fetch_assoc($result)){
     $id = $r1['id'];
     $class_id[++$num] = $id;
 }
-//print_r($class_id);
 
 $sql = 'DELETE FROM '.$config['timetable_subject'].' WHERE True; ';
 $result = mysqli_query($connection, $sql);
@@ -126,7 +115,6 @@ while ($r1 = mysqli_fetch_assoc($result)){
     $id = $r1['id'];
     $subjects_id[++$num] = $id;
 }
-//print_r($subjects_id);
 
 $sql = 'DELETE FROM '.$config['timetable_classroom'].' WHERE True; ';
 $result = mysqli_query($connection, $sql);
@@ -148,9 +136,7 @@ while ($r1 = mysqli_fetch_assoc($result)){
     $id = $r1['id'];
     $classrooms_id[++$num] = $id;
 }
-//print_r($classrooms_id);
-//print_r($class_id);
-//echo 'Читаємо groups' . '<br>';
+
 $sql = 'DELETE FROM '.$config['timetable_group'].' WHERE True; ';
 $result = mysqli_query($connection, $sql);
 $c = 0;
@@ -173,7 +159,7 @@ while ($r1 = mysqli_fetch_assoc($result)){
     $id = $r1['id'];
     $groups_id[++$num] = $id;
 }
-//print_r($groups_id);
+
 
 
 
@@ -206,7 +192,6 @@ $result = mysqli_query($connection, $sql);
 $c = 0;
 foreach ($xml->lessons[0] as $element) {
     $ident  = substr($element['id'], 1);
-//    echo 'ident=' . $ident. '<br>';
     $periodspercard = $element['periodspercard'];
     $periodsperweek = $element['periodsperweek'];
     $weeks = $element['weeks'];
@@ -281,7 +266,7 @@ foreach ($xml->lessons[0] as $element) {
     $result = mysqli_query($connection, $sql);
 }
 $lessons_id = [];
-//$lessons_teacher = [];
+
 
 // -------------------
 $sql = "SELECT * FROM " . $config['timetable_lesson'] . " ORDER BY `id`";
@@ -306,37 +291,36 @@ while ($r1 = mysqli_fetch_assoc($result)){
              WHERE `lesson_id` = ' . '-' . strval($num) . ' ;';
     $result1 = mysqli_query($connection, $sql1);
 }
-//print_r($lessons_id);
+
 
 // --------------------
 
 // -------------------------
-$sql = 'DELETE FROM '.$config['timetable_card'].' WHERE True; ';
+$sql = 'DELETE FROM `'.$config['timetable_card'].'` WHERE True; ';
 $result = mysqli_query($connection, $sql);
 
 $c = 0;
-//$cards_id = [];
+
 foreach ($xml->cards[0] as $element) {
-//    echo 'card=' . "<br>";
     $c++;
     $lessonid = substr($element['lessonid'],1);
     $classroomids = $element['classroomids'];
     $day = $element['day'];
     $period = $element['period'];
 
-    $sql = 'SELECT * FROM '.$config['timetable_day'].' WHERE  `day` = ' . $day . ' and  `timetable_id` = '. $timetable_id . ' ';
+    $sql = 'SELECT * FROM `'.$config['timetable_day'].'` WHERE  `day` = ' . $day . ' and  `timetable_id` = '. $timetable_id . ' ';
     $result = mysqli_query($connection, $sql);
     while ($r1 = mysqli_fetch_assoc($result)){
         $day_id = $r1['id'];
     }
-    $sql = 'SELECT * FROM '.$config['timetable_period'].' WHERE  `period` = ' . $period . ' and  `timetable_id` = '. $timetable_id . ' ';
+    $sql = 'SELECT * FROM `'.$config['timetable_period'].'` WHERE  `period` = ' . $period . ' and  `timetable_id` = '. $timetable_id . ' ';
     $result = mysqli_query($connection, $sql);
     while ($r1 = mysqli_fetch_assoc($result)){
         $period_id = $r1['id'];
     }
     $lesson_id = $lessons_id[intval($lessonid)];
 
-    $sql = 'INSERT INTO '.$config['timetable_card'].' (`day_id`, `lesson_id`,  `period_id`,  `timetable_id`) 
+    $sql = 'INSERT INTO `'.$config['timetable_card'].'` (`day_id`, `lesson_id`,  `period_id`,  `timetable_id`) 
             VALUES (' . strval($day_id) . ', ' .strval( $lesson_id) . ',  ' . strval($period_id) . ',  ' . strval($timetable_id) . ');';
     $result = mysqli_query($connection, $sql);
 
@@ -351,30 +335,25 @@ while ($r1 = mysqli_fetch_assoc($result)){
     $sql1 = "SELECT * FROM `" . $config['timetable_lesson_teachers'] . "`  WHERE  `lesson_id` = " . $lesson_id . " ; ";
     $result1 = mysqli_query($connection, $sql1);
     while ($r2 = mysqli_fetch_assoc($result1)){
-//        echo '=====' . "<br>";
         $teacher_id = $r2['teacher_id'];
-        $sql2 = 'INSERT INTO '.$config['timetable_teacher_cards'].' (`teacher_id`, `card_id`)
+        $sql2 = 'INSERT INTO `'.$config['timetable_teacher_cards'].'` (`teacher_id`, `card_id`)
                  VALUES (' . strval($teacher_id) . ', ' .strval( $card_id) . ');';
         $result2 = mysqli_query($connection, $sql2);
     }
 
 }
-
+//TODO формувати таблицю `timetable_card_classrooms`
 
 
 // ----------------------
 
 
-
-
-?>
-</pre>
-<?php
-//
-
-
 $newURL = '../../';
 
 
-//header('Location: '.$newURL);
+header('Location: '.$newURL);
+
+?>
+
+
 
