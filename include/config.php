@@ -29,6 +29,7 @@ $config = array(
     'timetable_teacher_cards'  =>  'timetable_teacher_cards',
     'timetable_card_classrooms'  =>  'timetable_card_classrooms',
     'timetable_reasons'  =>  'timetable_reasons',
+    'worktime_missing'  =>  'worktime_missing',
 
 );
 

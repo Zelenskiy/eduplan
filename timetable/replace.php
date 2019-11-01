@@ -4,16 +4,12 @@ require_once('../include/config.php');
 
 <html>
 <head>
-    <title>
-        Генерація замін
-    </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title> Генерація замін </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
     <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="../js/jquery-ui.js"></script>
-    <script type="text/javascript" src="../js/jquery-ui-min.js"></script>
     <script type="text/javascript" src="../js/replace.js"></script>
-
     <style type="text/css">
         .dataTable tbody tr:nth-child(1n) {
             background-color: #bee5eb;
@@ -42,24 +38,26 @@ require_once('../include/config.php');
             font-size: 12px;
         }
     </style>
-
 </head>
 <body>
-<!--TODO-->
-<!--Передбачити аутентифікацію-->
+<!--TODO Передбачити аутентифікацію -->
+
 
 <a href="../">Головна</a>
 
 <div class="row mt-lg-5 ml-1 mr-1">
     <div class="col-sm  w-100 ">
         <p class=" ml-1" style="font-size: 22px;">Дані про відсутнього вчителя</p>
-        <form method="post" action="controllers/replace_cntrl.php">
+        <form method="post" action="controllers/replace_add_teacher.php">
 
 
             <div class="form-group row">
                 <label for="staticEmail" class="col-sm-2 col-form-label ">Відсутн. &nbsp;&nbsp;&nbsp; </label>
                 <div class="col-sm-10">
-                    <select name="teach" required id="id_teach"  class="form-control" >
+                    <select name="teach_id" required id="id_teach" class="form-control" onchange="{
+                        var a=document.getElementById('id_teach').value;
+                        jQuery('#t_id').val(a);
+                    }">
                         <option value="" selected>---------</option>
                         <?php
                         $sql = "SELECT * FROM `" . $config['timetable_teacher'] . "`";
@@ -68,13 +66,14 @@ require_once('../include/config.php');
                             $id = $r1['id'];
                             $name = $r1['name'];
                             ?>
-                            <option value="<?php echo $id ?>"><?php echo $name ?></option> <?php
+                            <option  value="<?php echo $id ?>"><?php echo $name ?></option> <?php
                         }
                         ?>
                     </select>
                 </div>
             </div>
-
+            <input hidden id="t_id" name="teach_id" value = "">
+            <input hidden id="reas" name="reason" value = "">
             <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">з </label>
                 <div class="col-sm-10">
@@ -93,9 +92,12 @@ require_once('../include/config.php');
 
 
             <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label mr-0">причина  &nbsp; &nbsp; </label>
+                <label for="inputEmail3" class="col-sm-2 col-form-label mr-0">причина &nbsp; &nbsp; </label>
                 <div class="col-sm-10">
-                    <select name="teach" required id="reason"  class="form-control" >
+                    <select id="id_reason" name="reason" required id="reason" class="form-control" onchange="{
+                        var a=document.getElementById('id_reason').value;
+                        jQuery('#reas').val(a);
+                    }">
                         <option value="" selected>---------</option>
                         <?php
                         $sql = "SELECT * FROM `" . $config['timetable_reasons'] . "` ORDER BY `sort`";
@@ -104,7 +106,7 @@ require_once('../include/config.php');
                             $id = $r1['id'];
                             $name = $r1['name'];
                             ?>
-                            <option value="<?php echo $id ?>"><?php echo $name ?></option> <?php
+                            <option value="<?php echo $name ?>"><?php echo $name ?></option> <?php
                         }
                         ?>
                     </select>
@@ -114,10 +116,10 @@ require_once('../include/config.php');
 
             <div class="form-inline">
                 <div class="custom-control custom-checkbox  my-1 mr-sm-2 ml-lg-5">
-                    <input type="checkbox" id="kl_ker"  class="form-control"> Кл. керівн.
+                    <input name="kl_ker" type="checkbox" id="kl_ker" class="form-control"> Кл. керівн.
                 </div>
                 <div class="custom-control custom-checkbox my-1 mr-sm-2">
-                    <input type="checkbox" id="poch_kl"  class="form-control">  Поч. класи
+                    <input name="poch_kl" type="checkbox" id="poch_kl" class="form-control"> Поч. класи
                 </div>
                 <div class="custom-control custom-checkbox my-1 mr-sm-2">
                     <button type="submit" class="btn btn-outline-primary ">Додати</button>
@@ -125,6 +127,26 @@ require_once('../include/config.php');
             </div>
         </form>
 
+        <?php
+        function date_for_sql($arg_1)
+        {
+            $day = substr($arg_1,0,2);
+            $month = substr($arg_1,3,2);
+            $year = substr($arg_1,6,4);
+            $retval = $year . '-' . $month . '-' . $day ;
+            return $retval;
+        }
+        function date_from_sql($arg_1)
+        {
+            $day = substr($arg_1,8,2);
+            $month = substr($arg_1,5,2);
+            $year = substr($arg_1,0,4);
+            $retval = $day . '.' . $month;
+            return $retval;
+        }
+        //31.10.2019
+            //2019-10-31
+        ?>
 
         <div id="pnl">
 
@@ -138,32 +160,63 @@ require_once('../include/config.php');
                     <td class="td-header">Поч.кл.</td>
                     <td class="td-header">Вилучити</td>
                 </tr>
-                {% for miss in missing %}
-                <tr>
-                    <td>{{ miss.teach.short }}</td>
-                    <td>{{ miss.date_st|date:"d.m" }}</td>
-                    <td>{{ miss.date_fin|date:"d.m" }}</td>
-                    <td>{{ miss.reason }}</td>
-                    <td>
-                        {% if miss.kl_ker %}
-                        Так
-                        {% else %}
-                        Ні
-                        {% endif %}
-                    </td>
-                    <td>
-                        {% if miss.poch_kl %}
-                        Так
-                        {% else %}
-                        Ні
-                        {% endif %}
-                    </td>
-                    <td>
-                        <button class="btn  " type="button" onclick="del({{ miss.id }});"> -</button>
-                    </td>
+                <?php
+                $sql = "SELECT * FROM `worktime_settings` WHERE `field`='startacyear'";
+                $result = mysqli_query($connection, $sql);
+                while ($r1 = mysqli_fetch_assoc($result)) {
+                    $startacyear =date_for_sql( $r1['value']);
+                    break;
+                }
+                $sql = "SELECT * FROM `worktime_settings` WHERE `field`='endacyear'";
+                $result = mysqli_query($connection, $sql);
+                while ($r1 = mysqli_fetch_assoc($result)) {
+                    $endacyear = date_for_sql($r1['value']);
+                    break;
+                }
+                $sql = "SELECT * FROM `worktime_missing` AS m INNER JOIN `timetable_teacher` AS t
+                        ON m.`teach_id` = t.`id` WHERE m.`date_st` >= '$startacyear' and m.`date_fin` <= '$endacyear' ;";
 
-                </tr>
-                {% endfor %}
+                $result = mysqli_query($connection, $sql);
+
+                while ($r1 = mysqli_fetch_assoc($result)) {
+                    $id = $r1['id'];
+                    $date_st = date_from_sql($r1['date_st']);
+                    $date_fin = date_from_sql($r1['date_fin']);
+                    $reason = $r1['reason'];
+                    $kl_ker = $r1['kl_ker'];
+                    $poch_kl = $r1['poch_kl'];
+                    $teach_id = $r1['teach_id'];
+                    $teach_short = $r1['short'];
+                    ?>
+                    <tr>
+                        <td><?php echo $teach_short ?></td>
+                        <td><?php echo $date_st ?></td>
+                        <td><?php echo $date_fin ?></td>
+                        <td><?php echo $reason ?></td>
+                        <td>
+                            <?php  if ($kl_ker == "1") {
+                                echo "так";
+                            } else {
+                                echo "ні";
+                            } ?>
+                        </td>
+                        <td>
+                            <?php  if ($poch_kl == "1") {
+                                echo "так";
+                            } else {
+                                echo "ні";
+                            } ?>
+
+                        </td>
+                        <td>
+                            <button class="btn  " type="button" onclick="del(<?php echo $id ?>);"> -</button>
+                        </td>
+
+                    </tr>
+                    <?php
+
+                }
+                ?>
 
 
             </table>
