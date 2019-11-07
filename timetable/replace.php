@@ -9,7 +9,8 @@ require_once('../include/config.php');
     <link rel="stylesheet" href="../css/jquery-ui.css">
     <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="../js/jquery-ui.js"></script>
-    <script type="text/javascript" src="../js/replace.js"></script>
+<!--    <script type="text/javascript" src="../js/replace.js"></script>-->
+<!--    <script type="text/javascript" src="../js/repltable.js"></script>-->
     <style type="text/css">
         .dataTable tbody tr:nth-child(1n) {
             background-color: #bee5eb;
@@ -173,13 +174,15 @@ require_once('../include/config.php');
                     $endacyear = date_for_sql($r1['value']);
                     break;
                 }
-                $sql = "SELECT * FROM `worktime_missing` AS m INNER JOIN `timetable_teacher` AS t
+                $sql = "SELECT *, m.id as `miss_id` 
+                        FROM `worktime_missing` AS m INNER JOIN `timetable_teacher` AS t
                         ON m.`teach_id` = t.`id` WHERE m.`date_st` >= '$startacyear' and m.`date_fin` <= '$endacyear' ;";
+
 
                 $result = mysqli_query($connection, $sql);
 
                 while ($r1 = mysqli_fetch_assoc($result)) {
-                    $id = $r1['id'];
+                    $id = $r1['miss_id'];
                     $date_st = date_from_sql($r1['date_st']);
                     $date_fin = date_from_sql($r1['date_fin']);
                     $reason = $r1['reason'];
@@ -224,6 +227,30 @@ require_once('../include/config.php');
 
         </div>
     </div>
+
+    <script>
+        function del(id) {
+            console.log(id);
+            if (confirm('Вилучити запис?')){
+                $.ajax({
+                        url: "controllers/replace_del_teacher.php/" ,
+                        type: "POST",
+                        cache: false,
+                        data: { id:id},
+                        error: function () {
+                            console.log("Щось не те");
+                        },
+                        success: function () {
+                            // перезавантажуємо сторінку
+                            window.location.reload();
+
+                        }
+                    }
+                );
+            }
+
+        }
+    </script>
 
     <div class="col-sm   w-100 ">
         <p class=" ml-1" style="font-size: 22px;">Генерація таблиці замін</p>
@@ -401,6 +428,9 @@ require_once('../include/config.php');
 
 
     }
+
+
+
 
 </script>
 

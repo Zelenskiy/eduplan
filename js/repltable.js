@@ -1,16 +1,18 @@
-   function del(id) {
+
+  function del2(id) {
         console.log(id);
         if (confirm('Вилучити запис?')){
             $.ajax({
-                url: "controllers/replace_del_teacher.php" + String(id) + "/",
+                url: "controllers/replace_del_teacher.php/" ,
                 type: "POST",
                 cache: false,
-                data: { sort:id},
+                data: { id:id},
                 error: function () {
                     console.log("Щось не те");
                 },
                 success: function () {
-                    jQuery('#pnl').load('../repltable/');
+                    // перезавантажуємо сторінку
+
                 }
             }
         );
