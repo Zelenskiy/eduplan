@@ -145,6 +145,14 @@ require_once('../include/config.php');
             $retval = $day . '.' . $month;
             return $retval;
         }
+        function date_from_sql_full($arg_1)
+        {
+            $day = substr($arg_1,8,2);
+            $month = substr($arg_1,5,2);
+            $year = substr($arg_1,0,4);
+            $retval = $day . '.' . $month . '.' . $year;
+            return $retval;
+        }
         //31.10.2019
             //2019-10-31
         ?>
@@ -174,6 +182,21 @@ require_once('../include/config.php');
                     $endacyear = date_for_sql($r1['value']);
                     break;
                 }
+                $sql = "SELECT * FROM `worktime_settings` WHERE `field`='histzamst'";
+                $result = mysqli_query($connection, $sql);
+                while ($r1 = mysqli_fetch_assoc($result)) {
+                    $st = date_for_sql($r1['value']);
+                    break;
+                }
+                $sql = "SELECT * FROM `worktime_settings` WHERE `field`='histzamfin'";
+                $result = mysqli_query($connection, $sql);
+                while ($r1 = mysqli_fetch_assoc($result)) {
+                    $fin = date_for_sql($r1['value']);
+                    break;
+                }
+
+
+
                 $sql = "SELECT *, m.id as `miss_id` 
                         FROM `worktime_missing` AS m INNER JOIN `timetable_teacher` AS t
                         ON m.`teach_id` = t.`id` WHERE m.`date_st` >= '$startacyear' and m.`date_fin` <= '$endacyear' ;";
@@ -252,23 +275,25 @@ require_once('../include/config.php');
         }
     </script>
 
+
+
     <div class="col-sm   w-100 ">
         <p class=" ml-1" style="font-size: 22px;">Генерація таблиці замін</p>
-        <form id="#update-form2" method="post"> {% csrf_token %}
+        <form id="#update-form2" method="post">
 
 
             <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Початок </label>
                 <div class="col-sm-10">
                     <input type="text" id="datepicker3" name="datepicker3" class="form-control"
-                           value="{{ st }}">
+                           value="<?php echo date_from_sql_full($st); ?>">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Кінець </label>
                 <div class="col-sm-10">
                     <input type="text" id="datepicker4" name="datepicker4" class="form-control"
-                           value="{{ fin }}">
+                           value="<?php echo date_from_sql_full($fin); ?>">
 
                 </div>
 
@@ -294,21 +319,21 @@ require_once('../include/config.php');
     <div class=" ">
         <p class=" ml-3 mr-3" style="font-size: 22px;">Генерація пояснюючої записки</p>
 
-        <form id="#uploadForm2" method="post" enctype="multipart/form-data"> {% csrf_token %}
+        <form id="#uploadForm2" method="post" enctype="multipart/form-data">
 
 
             <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Початок </label>
                 <div class="col-sm-10">
                     <input type="text" id="datepicker5" name="datepicker5" class="form-control"
-                           value="{{ sthist }}">
+                           value="<?php echo date_from_sql_full($st); ?>">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Кінець </label>
                 <div class="col-sm-10">
                     <input type="text" id="datepicker6" name="datepicker6" class="form-control"
-                           value="{{ finhist }}">
+                           value="<?php echo date_from_sql_full($fin); ?>">
 
                 </div>
 
@@ -326,7 +351,6 @@ require_once('../include/config.php');
                 <button class="btn btn-outline-primary  btn-block"
                         id="hist_btn"
                         type="submit"
-                        {# onclick="genReplhist();" #}
                         formaction="../repl_3/"
                         title="">
                     Генерувати П.З.
@@ -340,14 +364,9 @@ require_once('../include/config.php');
 </div>
 
 
-<!--            <script type="text/javascript">-->
-<!--                alert("Увійдіть");-->
-<!--                document.location.href = '/accounts/login/';-->
-<!---->
-<!--</script>-->
 
 
-{% endif %}
+
 <script type="text/javascript">
 
 
@@ -366,7 +385,7 @@ require_once('../include/config.php');
     });
 
 </script>
-{# <input id="worktimeable" type="text" value="{{ worktimeable }}">#}
+
 
 <script type="text/javascript">
 
@@ -434,7 +453,7 @@ require_once('../include/config.php');
 
 </script>
 
-{% endblock %}
+
 
 
 </body>
